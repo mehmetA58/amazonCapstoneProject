@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Create And Delete ShopingList" time="132.95" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="footer" time="132.856" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,32 +62,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="US_08 User should be able to create and delete shoppingList." classname="Create And Delete ShopingList" time="132.856">
-    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=98.0.4758.102)&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;PC&apos;, ip: &apos;192.168.1.38&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [784da9c08f9401763553c809f898d8f3, findElement {using=xpath, value=//a[@id=&apos;nav-link-accountList&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 784da9c08f9401763553c809f898d8f3" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
+  <testcase name="US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page." classname="footer" time="132.856">
+    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=98.0.4758.102)&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;PC&apos;, ip: &apos;192.168.1.38&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [0904946d01e06d4931ca4fc273357864, actions {actions=[org.openqa.selenium.interactions.Sequence@3c28e9f2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56049/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 0904946d01e06d4931ca4fc273357864" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
 no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=98.0.4758.102)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [784da9c08f9401763553c809f898d8f3, findElement {using=xpath, value=//a[@id='nav-link-accountList']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 784da9c08f9401763553c809f898d8f3
+Command: [0904946d01e06d4931ca4fc273357864, actions {actions=[org.openqa.selenium.interactions.Sequence@3c28e9f2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56049/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0904946d01e06d4931ca4fc273357864
 </error>
-    <system-out><![CDATA[
-@Regression @shopingList @us08
-Scenario: US_08 User should be able to create and delete shoppingList. &amp#27;[90m# src/test/resources/features/ui_features/shopingList.feature:19&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser goes to url.&amp#27;[0m                                              &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mThe user clicks the Sign-In button..&amp#27;[0m                            &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()&amp#27;[0m
+    <system-ou<!<![CDATA[
+@Regression @footer @us07
+Scenario: US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page. &amp#27;[90m# src/test/resources/features/ui_features/footer.feature:5&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser goes to url.&amp#27;[0m                                                                                                                               &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()&amp#27;[0m
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser goes to FOOTER.&amp#27;[0m                                                                                                                             &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userGoesToFOOTER()&amp#27;[0m
       &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=98.0.4758.102)
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [784da9c08f9401763553c809f898d8f3, findElement {using=xpath, value=//a[@id='nav-link-accountList']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 784da9c08f9401763553c809f898d8f3
+Command: [0904946d01e06d4931ca4fc273357864, actions {actions=[org.openqa.selenium.interactions.Sequence@3c28e9f2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56049/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0904946d01e06d4931ca4fc273357864
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -99,113 +99,36 @@ Session ID: 784da9c08f9401763553c809f898d8f3
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton(amazonStepDefinitions.java:107)
-	at ?.The user clicks the Sign-In button..(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:7)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:573)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToFOOTER(amazonStepDefinitions.java:243)
+	at ?.User goes to FOOTER.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/footer.feature:7)
 &amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid email.&amp#27;[0m                                        &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the continue button.&amp#27;[0m                            &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid password.&amp#27;[0m                                     &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the Sign-In button.&amp#27;[0m                             &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser hover-over Account &Lists.&amp#27;[0m                                  &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userHoverOverAccountLists()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mThe user clicks on the Create a List link.&amp#27;[0m                      &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnTheCreateAListLink()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser clicks Create a List button.&amp#27;[0m                               &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksCreateAListButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser enters List Name.&amp#27;[0m                                          &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersListName()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks end of Create a List button.&amp#27;[0m                         &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksEndOfCreateAListButton()&amp#27;[0m
-  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser verifies that the list is created.&amp#27;[0m                        &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userVerifiesThatTheListIsCreated()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser goes to Manage list.&amp#27;[0m                                       &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userGoesToManageList()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on Delete list button&amp#27;[0m                                &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksOnDeleteListButton()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user confirms that the list has been deleted.&amp#27;[0m                &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheListHasBeenDeleted()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user closes the page.&amp#27;[0m                                        &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks on a link.&amp#27;[0m                                                                                                                       &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnALink()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user verifies the title of the page he is directed to.&amp#27;[0m                                                                                        &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserVerifiesTheTitleOfThePageHeIsDirectedTo()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user closes the page.&amp#27;[0m                                                                                                                         &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 52687
+    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 59286
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 24, 2022 4:41:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 24, 2022 4:41:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 24, 2022 4:41:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 4:41:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 95
-Feb 24, 2022 4:41:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 4:41:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 95
-Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 59618
+Starting ChromeDriver 98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}) on port 57650
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 24, 2022 4:42:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 24, 2022 4:42:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 24, 2022 4:42:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 4:42:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 95
-Feb 24, 2022 4:42:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 95
+Feb 24, 2022 4:42:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 98 of 95
 ]]></system-err>
-  </testcase>
-  <testcase name="US_09 User should be able to create and delete shoppingList." classname="Create And Delete ShopingList" time="0.094">
-    <error message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=98.0.4758.102)&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;PC&apos;, ip: &apos;192.168.1.38&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [784da9c08f9401763553c809f898d8f3, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 784da9c08f9401763553c809f898d8f3" type="org.openqa.selenium.NoSuchWindowException">org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [784da9c08f9401763553c809f898d8f3, get {url=https://www.amazon.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 784da9c08f9401763553c809f898d8f3
-</error>
-    <system-out><![CDATA[
-@Regression @shopingList @us09
-Scenario Outline: US_09 User should be able to create and delete shoppingList. &amp#27;[90m# src/test/resources/features/ui_features/shopingList.feature:39&amp#27;[0m
-  &amp#27;[31mGiven &amp#27;[0m&amp#27;[31mUser goes to url.&amp#27;[0m                                                      &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()&amp#27;[0m
-      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=98.0.4758.102)
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [784da9c08f9401763553c809f898d8f3, get {url=https://www.amazon.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:56052}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56052/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 784da9c08f9401763553c809f898d8f3
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
-	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:91)
-	at ?.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:6)
-&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the Sign-In button..&amp#27;[0m                                    &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid email.&amp#27;[0m                                                &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the continue button.&amp#27;[0m                                    &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid password.&amp#27;[0m                                             &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the Sign-In button.&amp#27;[0m                                     &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser hover-over Account &Lists.&amp#27;[0m                                          &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userHoverOverAccountLists()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mThe user clicks on the Create a List link.&amp#27;[0m                              &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnTheCreateAListLink()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser clicks Create a List button.&amp#27;[0m                                       &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksCreateAListButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser enters List Name.&amp#27;[0m                                                  &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userEntersListName()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks end of Create a List button.&amp#27;[0m                                 &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksEndOfCreateAListButton()&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser types the &amp#27;[0m&amp#27;[36m&amp#27;[1m"iphone 13 512"&amp#27;[0m&amp#27;[36m in the search box.&amp#27;[0m                       &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user goes to the product page.&amp#27;[0m                                      &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserGoesToTheProductPage()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks Add to List button.&amp#27;[0m                                          &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.userClicksAddToListButton()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user confirms that the selected product has been added to the list.&amp#27;[0m &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user clicks the View Your List button and sees the List.&amp#27;[0m             &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheViewYourListButtonAndSeesTheList()&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe user clicks the Delete button and sees the Deleted alert.&amp#27;[0m           &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheDeleteButtonAndSeesTheDeletedAlert()&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mThe user closes the page.&amp#27;[0m                                                &amp#27;[90m# ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()&amp#27;[0m
-]]></system-out>
   </testcase>
 </testsuite>

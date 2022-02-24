@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/ui_features",
         glue = "ui/stepDefinitions",
-        tags = "@us05",
+        tags = "",
         dryRun =false // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa
         // test failed olur ve bize eksik adimi raporlar

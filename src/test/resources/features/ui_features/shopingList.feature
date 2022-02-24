@@ -1,3 +1,5 @@
+@Regression
+  @shopingList
 Feature:Create And Delete ShopingList
 
   Background:US_08_09
@@ -13,7 +15,7 @@ Feature:Create And Delete ShopingList
   Then User enters List Name.
   And User clicks end of Create a List button.
 
-
+@us08
    Scenario:US_08 User should be able to create and delete shoppingList.
 
      Given User verifies that the list is created.
@@ -23,7 +25,7 @@ Feature:Create And Delete ShopingList
      And The user closes the page.
 
 
-
+@us09
   Scenario Outline: US_09 User should be able to create and delete shoppingList.
       When User types the "<products>" in the search box.
       Then The user goes to the product page.

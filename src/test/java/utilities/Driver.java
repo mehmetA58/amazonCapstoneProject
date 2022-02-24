@@ -2,8 +2,6 @@ package utilities;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
 import org.openqa.selenium.WebDriver;
@@ -62,7 +60,7 @@ public class Driver {
     public static void closeDriver(){
 
         if (driver!=null){
-           driver.quit();
+            driver.quit();
         }
         // burada yeniden null degeri atamamizin sebebi. bir sonraki getDriver method'u cagirisimizda
         // yeni deger atayabilmek istememizdir.
