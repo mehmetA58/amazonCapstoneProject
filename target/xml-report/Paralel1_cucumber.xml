@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="265.585">
+    <testcase classname="US01" name="US01_TC01 User must be able to login to the Site with a valid URL" time="13.496">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user verifies that at "https://www.amazon.com/"....................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US02_TC01 The user should be able to login with valid information. (Positive Login)" time="28.263">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................passed
+Then The user clicks the Sign-In button.....................................passed
+And The user sees the text "Hello,USER".....................................passed
+Then User logs out of account...............................................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US02_TC02 The user should not be able to login with invalid information. (Negative Login)" time="20.809">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fbfb62177c44514242b9054e039ba056, getElementText {id=a26748d5-25b2-45b8-be27-e2202fc60ea2}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (fbfb62177c44514242b9054e039ba056)] -&gt; xpath: (//h4[@class='a-alert-heading'])]&#10;Session ID: fbfb62177c44514242b9054e039ba056" type="org.openqa.selenium.StaleElementReferenceException">
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters invalid password...........................................passed
+Then The user clicks the Sign-In button.....................................passed
+And The user sees the Your password is incorrect............................failed
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbfb62177c44514242b9054e039ba056, getElementText {id=a26748d5-25b2-45b8-be27-e2202fc60ea2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (fbfb62177c44514242b9054e039ba056)] -> xpath: (//h4[@class='a-alert-heading'])]
+Session ID: fbfb62177c44514242b9054e039ba056
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.getText(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheYourPasswordIsIncorrect(amazonStepDefinitions.java:142)
+	at ✽.The user sees the Your password is incorrect.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonCapstone.feature:27)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US01" name="US02_TC03 The user should not be able to login with invalid information. (Negative Login)" time="18.158">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='ap_password']&quot;}&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fbfb62177c44514242b9054e039ba056, findElement {using=xpath, value=//input[@id='ap_password']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fbfb62177c44514242b9054e039ba056" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters invalid email..............................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................failed
+Then The user clicks the Sign-In button.....................................skipped
+And The user sees "We cannot find an account with that email address".......skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ap_password']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbfb62177c44514242b9054e039ba056, findElement {using=xpath, value=//input[@id='ap_password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfb62177c44514242b9054e039ba056
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword(amazonStepDefinitions.java:122)
+	at ✽.User enters valid password.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonCapstone.feature:35)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US01" name="US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed." time="2.925">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fbfb62177c44514242b9054e039ba056, getElementText {id=d62ef559-f34d-4747-9a42-cdb6dd878e8b}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (fbfb62177c44514242b9054e039ba056)] -&gt; xpath: //a[@class='hmenu-item']//div]&#10;Session ID: fbfb62177c44514242b9054e039ba056" type="org.openqa.selenium.StaleElementReferenceException">
+            <![CDATA[Given User goes to url......................................................passed
+When kullanici ALL butonuna tiklar..........................................passed
+Then kullanici "Electronics" Basligina Tiklar...............................failed
+And The user should be able to see and click all the titles in the ALL menu..skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fbfb62177c44514242b9054e039ba056, getElementText {id=d62ef559-f34d-4747-9a42-cdb6dd878e8b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:51915}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51915/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (fbfb62177c44514242b9054e039ba056)] -> xpath: //a[@class='hmenu-item']//div]
+Session ID: fbfb62177c44514242b9054e039ba056
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+	at ui.stepDefinitions.amazonStepDefinitions.kullaniciBasliginaTiklar(amazonStepDefinitions.java:71)
+	at ✽.kullanici "Electronics" Basligina Tiklar(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonCapstone.feature:43)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US01" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word" time="5.86">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "mango" in the search box...............................passed
+Then User verifies that the "mango" he is looking for includes the products listed..passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word 2" time="13.067">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "nutella" in the search box.............................passed
+Then User verifies that the "nutella" he is looking for includes the products listed..passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word 3" time="11.171">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "suite case" in the search box..........................passed
+Then User verifies that the "suite case" he is looking for includes the products listed..passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US05_TC01 User should be able to use filters and sorting in product listing process" time="28.09">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "macbook" in the search box.............................passed
+Then The user selects the appropriate filter to list the products he has listed..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US05_TC01 User should be able to use filters and sorting in product listing process 2" time="21.595">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "gaming mouse" in the search box........................passed
+Then The user selects the appropriate filter to list the products he has listed..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same." time="26.316">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class='a-price-whole'])&quot;}&#10;  (Session info: chrome=98.0.4758.102)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [78b1579b98f951858c33aff081946426, findElement {using=xpath, value=(//span[@class='a-price-whole'])}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52114/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78b1579b98f951858c33aff081946426" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User goes to url......................................................passed
+When The user searches and lists the "macbook" he wants to buy in the search box.failed
+Then The user chooses the products he wants to buy..........................skipped
+And User goes to cart.......................................................skipped
+And The user confirms that the selected products have been added to the cart..skipped
+Then The user confirms that the total price of the selected products is the same as the total price in the basket..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='a-price-whole'])"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78b1579b98f951858c33aff081946426, findElement {using=xpath, value=(//span[@class='a-price-whole'])}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52114/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 78b1579b98f951858c33aff081946426
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.getText(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.theUserSearchesAndListsTheHeWantsToBuyInTheSearchBox(amazonStepDefinitions.java:206)
+	at ✽.The user searches and lists the "macbook" he wants to buy in the search box(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonCapstone.feature:74)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US01" name="US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same. 2" time="19.385">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When The user searches and lists the "gaming mouse" he wants to buy in the search box.passed
+Then The user chooses the products he wants to buy..........................passed
+And User goes to cart.......................................................passed
+And The user confirms that the selected products have been added to the cart..passed
+Then The user confirms that the total price of the selected products is the same as the total price in the basket..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page." time="5.648">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User goes to FOOTER....................................................passed
+Then The user clicks on a link..............................................passed
+And The user verifies the title of the page he is directed to...............passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create And Delete ShopingList" name="US_08 User should be able to create and delete shoppingList." time="23.45">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................passed
+Then The user clicks the Sign-In button.....................................passed
+And User hover-over Account &Lists..........................................passed
+When The user clicks on the Create a List link..............................passed
+Then User clicks Create a List button.......................................passed
+Then User enters List Name..................................................passed
+And User clicks end of Create a List button.................................passed
+Given User verifies that the list is created................................passed
+Then User goes to Manage list...............................................passed
+And User clicks on Delete list button.......................................passed
+And The user confirms that the list has been deleted........................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Create And Delete ShopingList" name="US_09 User should be able to create and delete shoppingList." time="26.99">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................passed
+Then The user clicks the Sign-In button.....................................passed
+And User hover-over Account &Lists..........................................passed
+When The user clicks on the Create a List link..............................passed
+Then User clicks Create a List button.......................................passed
+Then User enters List Name..................................................passed
+And User clicks end of Create a List button.................................passed
+When User types the "iphone 13 512" in the search box.......................passed
+Then The user goes to the product page......................................passed
+And User clicks Add to List button..........................................passed
+Then The user confirms that the selected product has been added to the list..passed
+And The user clicks the View Your List button and sees the List.............passed
+Then The user clicks the Delete button and sees the Deleted alert...........passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

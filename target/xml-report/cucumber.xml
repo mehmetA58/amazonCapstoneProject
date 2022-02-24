@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="61.154">
+    <testcase classname="US01" name="US05_TC01 User should be able to use filters and sorting in product listing process" time="36.495">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "macbook" in the search box.............................passed
+Then The user selects the appropriate filter to list the products he has listed..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01" name="US05_TC01 User should be able to use filters and sorting in product listing process 2" time="24.356">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "gaming mouse" in the search box........................passed
+Then The user selects the appropriate filter to list the products he has listed..passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
