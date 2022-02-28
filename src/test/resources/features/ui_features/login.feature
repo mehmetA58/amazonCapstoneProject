@@ -34,7 +34,5 @@ Feature: login
     Then The user clicks the Sign-In button..
     When User enters invalid email.
     Then The user clicks the continue button.
-    When User enters valid password.
-    Then The user clicks the Sign-In button.
-    And The user sees "We cannot find an account with that email address"
+    And The user sees the Your password is incorrect.
     And The user closes the page.

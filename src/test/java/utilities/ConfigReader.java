@@ -9,8 +9,7 @@ public class ConfigReader {
 
     static   Properties properties;
 
-    //-Bu class'in amacı configuration.properties dosyasını okumak
-    //ve oradaki key value ikililerini kullanarak istedigimiz key'e ait value'yu bize getirmek
+
     static {
         String dosyaYolu="configuration.properties";
         try {
@@ -26,8 +25,7 @@ public class ConfigReader {
     }
 
 
-    //test class'larindan configReader class'ina ulaşıp yukarıdaki islemleriyapmamızı sağlayacak
-    //bir method oluşturacagiz
+
     public static String getProperty(String key){
 
         String value=properties.getProperty(key);

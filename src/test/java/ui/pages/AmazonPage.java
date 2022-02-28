@@ -87,6 +87,9 @@ public class AmazonPage {
     @FindBy(xpath = "(//a[@class='nav_a'])[6]")
     public WebElement FooterAmazonScienceLink;
 
+    @FindBy(xpath = "(//a[@class='nav_a'])")
+    public WebElement FooterLink;
+
     @FindBy(linkText = "Create a List")
     public WebElement createAList;
 
@@ -122,7 +125,8 @@ public class AmazonPage {
 
      @FindBy(xpath = "//span[@id='productTitle']")
      public WebElement productName;
-     @FindBy(xpath = "(//div[@id='huc-atwl-asin-info']//a//span)")
+
+     @FindBy(xpath = "//li[@class='w-asin']//table//tbody//tr//td//a")
      public WebElement productInList;
 
      @FindBy(linkText = "View Your List")
@@ -137,6 +141,10 @@ public class AmazonPage {
      @FindBy(xpath = "(//div[@class='a-box a-alert-inline a-alert-inline-success']//div//div)")
     public WebElement deleteIsDisplayed;
 
+@FindBy(linkText = "Accessories & Supplies")
+    public WebElement allAccessories;
 
+    @FindBy(xpath = "(//span[@id='nav-search-label-id'])")
+    public WebElement AllMenuDogrulama;
 
 }

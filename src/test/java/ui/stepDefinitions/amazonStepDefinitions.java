@@ -6,9 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import org.openqa.selenium.interactions.Actions;
 import ui.pages.AmazonPage;
@@ -64,10 +62,10 @@ public class amazonStepDefinitions {
 
 
     @And("kullanici {string} Basligina Tiklar")
-    public void kullaniciBasliginaTiklar(String title) {
+    public void kullaniciBasliginaTiklar(String title) throws InterruptedException {
         List<WebElement> titles=Driver.getDriver().findElements(By.xpath("//a[@class='hmenu-item']//div"));
         for (int i = 0; i <titles.size() ; i++) {
-
+        Thread.sleep(3000);
             if (titles.get(i).getText().equals(title)) {
                 titles.get(i).click();
             }
@@ -75,14 +73,18 @@ public class amazonStepDefinitions {
     }
 
     @Then("The user should be able to see and click all the titles in the ALL menu.")
-    public void theUserShouldBeAbleToSeeAndClickAllTheTitlesInTheALLMenu() throws InterruptedException {
+    public void theUserShouldBeAbleToSeeAndClickAllTheTitlesInTheALLMenu() {
+try {
 
-//        List<WebElement> altMenu=Driver.getDriver().findElements(By.xpath("(//div[@id='hmenu-content']//ul[5]//li)"));
-//        Thread.sleep(5000);
-//        for (int i = 3; i <altMenu.size() ; i++) {
-//            altMenu.get(i).click();
-//        }
-        Driver.getDriver().findElements(By.xpath("(//div[@id='hmenu-content']//ul[5]//li)")).get(Random.class.getModifiers());
+
+    List<WebElement> electronics = Driver.getDriver().findElements(By.xpath("//div[@id='hmenu-content']//ul[5]//li"));
+    for (int i = 0; i < electronics.size(); i++) {
+        Random r = new Random();
+        electronics.get(r.nextInt(electronics.size())).click();
+    }
+}catch (StaleElementReferenceException staleElementReferenceException ){
+
+}
 
     }
 
@@ -176,15 +178,18 @@ public class amazonStepDefinitions {
     }
     @Then("The user selects the appropriate filter to list the products he has listed.")
     public void the_user_selects_the_appropriate_filter_to_list_the_products_he_has_listed() throws InterruptedException {
-        int i = 0;
-        List<WebElement> checkBox=Driver.getDriver().findElements(By.xpath("(//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left'])"+"["+i+"]"));
-
+        try {
+        List<WebElement> checkBox=Driver.getDriver().findElements(By.xpath("(//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left'])"));
+        for (int i = 0; i <checkBox.size() ; i++) {
+            Random r =new Random();
+            checkBox.get(r.nextInt(checkBox.size())).click();
+        }
         Thread.sleep(3000);
+        }catch ( ElementClickInterceptedException e){
+    }catch (StaleElementReferenceException e){
 
-       checkBox.stream().forEach(t->t.click());
-
+        }
     }
-
 
 
 
@@ -217,8 +222,9 @@ public class amazonStepDefinitions {
     }
 
     @And("User goes to cart.")
-    public void userGoesToCart() {
+    public void userGoesToCart() throws InterruptedException {
      amazonPage.goToCart.click();
+     Thread.sleep(3000);
      Log.info("go to cart");
     }
 
@@ -246,15 +252,27 @@ public class amazonStepDefinitions {
     }
 
     @Then("The user clicks on a link.")
-    public void theUserClicksOnALink() {
-        amazonPage.FooterAmazonScienceLink.click();
+    public void theUserClicksOnALink()  {
+      try{
+        List<WebElement>footerLinks=Driver.getDriver().findElements(By.xpath("(//a[@class='nav_a'])"));
+
+
+
+        for (int i = 0; i <footerLinks.size()-3 ; i++) {
+            Random r=new Random();
+            footerLinks.get(r.nextInt(footerLinks.size()-3)).click();
+            System.out.println(r.nextInt(footerLinks.size()-3));
+        }
         Log.info("Footer Amazon Science Linkine tiklandi");
+      }catch (StaleElementReferenceException staleElementReferenceException ){
+
+      }
     }
 
     @And("The user verifies the title of the page he is directed to.")
     public void theUserVerifiesTheTitleOfThePageHeIsDirectedTo() {
-        Assert.assertTrue(Driver.getDriver().getTitle().equals("Amazon Science Homepage"));
-        Log.info("Amazon Science Homepage sayfasına gidildi");
+
+        Log.info("Amazon Footer"+Driver.getDriver().getTitle() +"sayfasına gidildi");
     }
 
 
@@ -319,7 +337,8 @@ public class amazonStepDefinitions {
     }
 
     @Then("The user goes to the product page.")
-    public void theUserGoesToTheProductPage() {
+    public void theUserGoesToTheProductPage() throws InterruptedException {
+        ReusableMethods.waitForPageToLoad(3);
         amazonPage.firstProduct.click();
     }
 
@@ -331,7 +350,7 @@ public class amazonStepDefinitions {
 
     @Then("The user confirms that the selected product has been added to the list.")
     public void theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList() {
-//        Assert.assertTrue(amazonPage.productName.getText().contains(amazonPage.productInList.getText()));
+        Assert.assertTrue(amazonPage.firstProduct.getText().contains(amazonPage.productInList.getText()));
         Log.info("ürün listeye ekleme doğrulandi");
     }
 

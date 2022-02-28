@@ -20,8 +20,8 @@ Feature: product
     Given User goes to url.
     When User types the "<product name>" in the search box.
     Then The user selects the appropriate filter to list the products he has listed.
-  #And The user sees that the filtered products are listed.
-  #And The user closes the page.
+    And The user sees that the filtered products are listed.
+    And The user closes the page.
     Examples:
       | product name |
       | macbook |
