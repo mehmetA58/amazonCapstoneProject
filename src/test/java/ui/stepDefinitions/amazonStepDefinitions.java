@@ -369,4 +369,9 @@ try {
         Assert.assertTrue(amazonPage.deleteIsDisplayed.isDisplayed());
         Log.info("Listedeki ürünü silme basarili");
     }
+
+    @And("assert titles")
+    public void assertTitles() {
+
+    }
 }

@@ -26,6 +26,8 @@ public class AmazonPage {
     @FindBy(id = "nav-hamburger-menu")
     public WebElement AllMenusu;
 
+    @FindBy(xpath = "//select[@id='searchDropdownBox']")
+    public WebElement AllDropdownMenu;
 
     @FindBy(xpath = "//a[@data-menu-id='5']")
     public WebElement ElectronicMenu;
