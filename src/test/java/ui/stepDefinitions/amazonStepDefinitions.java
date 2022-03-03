@@ -9,6 +9,8 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 
 import org.openqa.selenium.interactions.Actions;
+
+
 import ui.pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -350,7 +352,8 @@ try {
 
     @Then("The user confirms that the selected product has been added to the list.")
     public void theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList() {
-        Assert.assertTrue(amazonPage.firstProduct.getText().contains(amazonPage.productInList.getText()));
+        String productList = Driver.getDriver().findElement(By.xpath("//h2//a")).getCssValue("title");
+        Assert.assertTrue(amazonPage.firstProduct.getText().contains(productList));
         Log.info("ürün listeye ekleme doğrulandi");
     }
 

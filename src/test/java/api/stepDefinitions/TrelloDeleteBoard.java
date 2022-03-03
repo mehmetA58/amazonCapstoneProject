@@ -26,6 +26,7 @@ public class TrelloDeleteBoard extends TrelloTestBaseApi{
         response= given()
                 .spec(spec)
                 .contentType("application/json")
+                .body(requestBody)
                 .when()
                 .delete("/{first}/{second}/{third}");
         response.prettyPrint();

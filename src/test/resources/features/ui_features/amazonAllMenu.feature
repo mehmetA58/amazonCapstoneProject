@@ -1,3 +1,4 @@
+@Regression
 Feature: All Menu
 
   Scenario: US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed.

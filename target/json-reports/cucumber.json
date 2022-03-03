@@ -1,10 +1,10 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:32:41.744Z",
-        "line": 3,
+        "start_timestamp": "2022-03-03T15:54:02.635Z",
+        "line": 4,
         "name": "US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed.",
         "description": "",
         "id": "all-menu;us03-tc01-the-user-should-be-able-to-select-any-category-from-the-all-menu-and-see-the-subcategories-listed.",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 109960347000,
+              "duration": 7138000000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User goes to url.",
             "match": {
               "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
@@ -25,11 +25,10 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1349b8861a95674efa26ff943b35f263, clickElement {id\u003dfec2be74-66a8-48ee-92b8-80b9bb49f1c4}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50571/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (1349b8861a95674efa26ff943b35f263)] -\u003e id: nav-hamburger-menu]\nSession ID: 1349b8861a95674efa26ff943b35f263\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.kullaniciALLButonunaTiklar(amazonStepDefinitions.java:60)\r\n\tat ✽.kullanici ALL butonuna tiklar(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonAllMenu.feature:5)\r\n",
-              "duration": 29777297800,
-              "status": "failed"
+              "duration": 913000000,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "kullanici ALL butonuna tiklar",
             "match": {
               "location": "ui.stepDefinitions.amazonStepDefinitions.kullaniciALLButonunaTiklar()"
@@ -38,10 +37,11 @@
           },
           {
             "result": {
-              "duration": 1000300,
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_312\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4dbc559b86522c8e01762011fe4f01ae, getElementText {id\u003d5d7e1ca1-dcad-426a-a9df-c7feaaa705f6}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:54444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54444/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (4dbc559b86522c8e01762011fe4f01ae)] -\u003e xpath: //a[@class\u003d\u0027hmenu-item\u0027]//div]\nSession ID: 4dbc559b86522c8e01762011fe4f01ae\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.kullaniciBasliginaTiklar(amazonStepDefinitions.java:71)\r\n\tat ✽.kullanici \"Electronics\" Basligina Tiklar(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonAllMenu.feature:7)\r\n",
+              "duration": 62222000000,
+              "status": "failed"
             },
-            "line": 6,
+            "line": 7,
             "name": "kullanici \"Electronics\" Basligina Tiklar",
             "match": {
               "arguments": [
@@ -58,12 +58,17 @@
             "result": {
               "status": "skipped"
             },
-            "line": 7,
+            "line": 8,
             "name": "The user should be able to see and click all the titles in the ALL menu.",
             "match": {
               "location": "ui.stepDefinitions.amazonStepDefinitions.theUserShouldBeAbleToSeeAndClickAllTheTitlesInTheALLMenu()"
             },
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
           }
         ]
       }
@@ -73,13 +78,22 @@
     "id": "all-menu",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/ui_features/amazonAllMenu.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   },
   {
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:32:41.744Z",
+        "start_timestamp": "2022-03-03T15:55:12.998Z",
         "line": 5,
         "name": "US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page.",
         "description": "",
@@ -89,7 +103,7 @@
         "steps": [
           {
             "result": {
-              "duration": 68650021600,
+              "duration": 1507000000,
               "status": "passed"
             },
             "line": 6,
@@ -101,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 8455704500,
+              "duration": 118000000,
               "status": "passed"
             },
             "line": 7,
@@ -113,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 26353562700,
+              "duration": 2799000000,
               "status": "passed"
             },
             "line": 8,
@@ -125,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 7005000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 9,
@@ -137,9 +151,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [60ac7ccdc93f55c3cc31970ae277991f, quit {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 60ac7ccdc93f55c3cc31970ae277991f\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)\r\n\tat utilities.Driver.closeDriver(Driver.java:63)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage(amazonStepDefinitions.java:104)\r\n\tat ✽.The user closes the page.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/footer.feature:10)\r\nCaused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: unknown\r\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)\r\n\tat utilities.Driver.closeDriver(Driver.java:63)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage(amazonStepDefinitions.java:104)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\nCaused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)\r\n\tat org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)\r\n\tat java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)\r\n\t... 3 more\r\n",
-              "duration": 20541889900,
-              "status": "failed"
+              "duration": 645000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "The user closes the page.",
@@ -198,7 +211,7 @@
     "line": 4,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:32:41.744Z",
+        "start_timestamp": "2022-03-03T15:55:18.077Z",
         "line": 5,
         "name": "US01_TC01 User must be able to login to the Site with a valid URL",
         "description": "",
@@ -208,7 +221,7 @@
         "steps": [
           {
             "result": {
-              "duration": 104270412500,
+              "duration": 6723000000,
               "status": "passed"
             },
             "line": 6,
@@ -220,9 +233,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: invalid session id\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [60ac7ccdc93f55c3cc31970ae277991f, getCurrentUrl {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:340)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserVerifiesThatAt(amazonStepDefinitions.java:98)\r\n\tat ✽.The user verifies that at \"https://www.amazon.com/\".(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:7)\r\n",
-              "duration": 31930429300,
-              "status": "failed"
+              "duration": 36000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "The user verifies that at \"https://www.amazon.com/\".",
@@ -239,7 +251,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 609000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "The user closes the page.",
@@ -262,7 +275,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:34:57.955Z",
+        "start_timestamp": "2022-03-03T15:55:25.446Z",
         "line": 11,
         "name": "US02_TC01 The user should be able to login with valid information. (Positive Login)",
         "description": "",
@@ -272,9 +285,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:12)\r\n",
-              "duration": 3002300,
-              "status": "failed"
+              "duration": 5011000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "User goes to url.",
@@ -285,8 +297,8 @@
           },
           {
             "result": {
-              "duration": 1001000,
-              "status": "skipped"
+              "duration": 1055000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "The user clicks the Sign-In button..",
@@ -297,7 +309,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 92000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "User enters valid email.",
@@ -308,7 +321,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1562000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "The user clicks the continue button.",
@@ -319,7 +333,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 55000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "User enters valid password.",
@@ -330,7 +345,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 65000000,
+              "status": "passed"
             },
             "line": 17,
             "name": "The user clicks the Sign-In button.",
@@ -341,7 +357,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2737000000,
+              "status": "passed"
             },
             "line": 18,
             "name": "The user sees the text \"Hello,USER\".",
@@ -358,8 +375,8 @@
           },
           {
             "result": {
-              "duration": 1001900,
-              "status": "skipped"
+              "duration": 5686000000,
+              "status": "passed"
             },
             "line": 19,
             "name": "User logs out of account",
@@ -370,7 +387,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 634000000,
+              "status": "passed"
             },
             "line": 20,
             "name": "The user closes the page.",
@@ -396,7 +414,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:34:57.972Z",
+        "start_timestamp": "2022-03-03T15:55:42.349Z",
         "line": 22,
         "name": "US02_TC02 The user should not be able to login with invalid information. (Negative Login)",
         "description": "",
@@ -406,9 +424,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:23)\r\n",
-              "duration": 3002300,
-              "status": "failed"
+              "duration": 5480000000,
+              "status": "passed"
             },
             "line": 23,
             "name": "User goes to url.",
@@ -419,7 +436,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1263000000,
+              "status": "passed"
             },
             "line": 24,
             "name": "The user clicks the Sign-In button..",
@@ -430,7 +448,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 94000000,
+              "status": "passed"
             },
             "line": 25,
             "name": "User enters valid email.",
@@ -441,7 +460,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1201000000,
+              "status": "passed"
             },
             "line": 26,
             "name": "The user clicks the continue button.",
@@ -452,7 +472,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 52000000,
+              "status": "passed"
             },
             "line": 27,
             "name": "User enters invalid password.",
@@ -463,7 +484,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 69000000,
+              "status": "passed"
             },
             "line": 28,
             "name": "The user clicks the Sign-In button.",
@@ -474,8 +496,9 @@
           },
           {
             "result": {
-              "duration": 1000700,
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_312\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4f1fc76610d4f468a0a32604ee446f2b, getElementText {id\u003dbd09544d-813c-4c5a-b58b-67de2f9fdb65}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:54666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54666/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (4f1fc76610d4f468a0a32604ee446f2b)] -\u003e xpath: (//h4[@class\u003d\u0027a-alert-heading\u0027])]\nSession ID: 4f1fc76610d4f468a0a32604ee446f2b\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy20.getText(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheYourPasswordIsIncorrect(amazonStepDefinitions.java:146)\r\n\tat ✽.The user sees the Your password is incorrect.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:29)\r\n",
+              "duration": 1207000000,
+              "status": "failed"
             },
             "line": 29,
             "name": "The user sees the Your password is incorrect.",
@@ -509,7 +532,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:34:57.990Z",
+        "start_timestamp": "2022-03-03T15:55:51.724Z",
         "line": 32,
         "name": "US02_TC03 The user should not be able to login with invalid information. (Negative Login)",
         "description": "",
@@ -519,9 +542,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:33)\r\n",
-              "duration": 3001400,
-              "status": "failed"
+              "duration": 1319000000,
+              "status": "passed"
             },
             "line": 33,
             "name": "User goes to url.",
@@ -532,7 +554,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 798000000,
+              "status": "passed"
             },
             "line": 34,
             "name": "The user clicks the Sign-In button..",
@@ -543,7 +566,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 71000000,
+              "status": "passed"
             },
             "line": 35,
             "name": "User enters invalid email.",
@@ -554,7 +578,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 750000000,
+              "status": "passed"
             },
             "line": 36,
             "name": "The user clicks the continue button.",
@@ -565,7 +590,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 37000000,
+              "status": "passed"
             },
             "line": 37,
             "name": "The user sees the Your password is incorrect.",
@@ -576,7 +602,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 650000000,
+              "status": "passed"
             },
             "line": 38,
             "name": "The user closes the page.",
@@ -635,7 +662,7 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2022-03-01T12:32:41.744Z",
+        "start_timestamp": "2022-03-03T15:55:55.365Z",
         "line": 13,
         "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
         "description": "",
@@ -645,7 +672,7 @@
         "steps": [
           {
             "result": {
-              "duration": 68507965400,
+              "duration": 5975000000,
               "status": "passed"
             },
             "line": 7,
@@ -657,7 +684,7 @@
           },
           {
             "result": {
-              "duration": 70840551200,
+              "duration": 2733000000,
               "status": "passed"
             },
             "line": 8,
@@ -675,7 +702,7 @@
           },
           {
             "result": {
-              "duration": 44027800,
+              "duration": 40000000,
               "status": "passed"
             },
             "line": 9,
@@ -693,7 +720,7 @@
           },
           {
             "result": {
-              "duration": 1001300,
+              "duration": 626000000,
               "status": "passed"
             },
             "line": 10,
@@ -717,7 +744,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:35:01.526Z",
+        "start_timestamp": "2022-03-03T15:56:04.740Z",
         "line": 14,
         "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
         "description": "",
@@ -727,7 +754,7 @@
         "steps": [
           {
             "result": {
-              "duration": 44116134500,
+              "duration": 5995000000,
               "status": "passed"
             },
             "line": 7,
@@ -739,7 +766,7 @@
           },
           {
             "result": {
-              "duration": 28550439500,
+              "duration": 3082000000,
               "status": "passed"
             },
             "line": 8,
@@ -757,7 +784,7 @@
           },
           {
             "result": {
-              "duration": 66040200,
+              "duration": 41000000,
               "status": "passed"
             },
             "line": 9,
@@ -775,9 +802,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7c22ec79fac95f9d6ad3916f2546acd2, quit {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7c22ec79fac95f9d6ad3916f2546acd2\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:129)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)\r\n\tat utilities.Driver.closeDriver(Driver.java:63)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage(amazonStepDefinitions.java:104)\r\n\tat ✽.The user closes the page.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:10)\r\nCaused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: unknown\r\n\tat java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)\r\n\tat java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)\r\n\tat org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:287)\r\n\tat utilities.Driver.closeDriver(Driver.java:63)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage(amazonStepDefinitions.java:104)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:405)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:834)\r\nCaused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:174)\r\n\tat org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:127)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:119)\r\n\tat java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)\r\n\t... 3 more\r\n",
-              "duration": 20003139400,
-              "status": "failed"
+              "duration": 613000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "The user closes the page.",
@@ -800,7 +826,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:36:34.272Z",
+        "start_timestamp": "2022-03-03T15:56:14.471Z",
         "line": 15,
         "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
         "description": "",
@@ -810,9 +836,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:7)\r\n",
-              "duration": 2001400,
-              "status": "failed"
+              "duration": 6378000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "User goes to url.",
@@ -823,7 +848,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3164000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "User types the \"suite case\" in the search box.",
@@ -840,7 +866,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 41000000,
+              "status": "passed"
             },
             "line": 9,
             "name": "User verifies that the \"suite case\" he is looking for includes the products listed.",
@@ -857,7 +884,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 616000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "The user closes the page.",
@@ -880,7 +908,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:36:34.280Z",
+        "start_timestamp": "2022-03-03T15:56:24.671Z",
         "line": 27,
         "name": "US05_TC01 User should be able to use filters and sorting in product listing process",
         "description": "",
@@ -890,9 +918,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)\r\n",
-              "duration": 2001300,
-              "status": "failed"
+              "duration": 6058000000,
+              "status": "passed"
             },
             "line": 20,
             "name": "User goes to url.",
@@ -903,7 +930,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2504000000,
+              "status": "passed"
             },
             "line": 21,
             "name": "User types the \"macbook\" in the search box.",
@@ -920,8 +948,8 @@
           },
           {
             "result": {
-              "duration": 2001100,
-              "status": "skipped"
+              "duration": 2514000000,
+              "status": "passed"
             },
             "line": 22,
             "name": "The user selects the appropriate filter to list the products he has listed.",
@@ -932,18 +960,8 @@
           },
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "The user sees that the filtered products are listed.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSeesThatTheFilteredProductsAreListed()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 629000000,
+              "status": "passed"
             },
             "line": 24,
             "name": "The user closes the page.",
@@ -966,7 +984,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:36:34.295Z",
+        "start_timestamp": "2022-03-03T15:56:36.378Z",
         "line": 28,
         "name": "US05_TC01 User should be able to use filters and sorting in product listing process",
         "description": "",
@@ -976,9 +994,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)\r\n",
-              "duration": 1999500,
-              "status": "failed"
+              "duration": 6997000000,
+              "status": "passed"
             },
             "line": 20,
             "name": "User goes to url.",
@@ -989,7 +1006,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2851000000,
+              "status": "passed"
             },
             "line": 21,
             "name": "User types the \"gaming mouse\" in the search box.",
@@ -1006,7 +1024,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d98.0.4758.102)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_312\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [99f9b0cee15a0ba7175995446f0f56c9, clickElement {id\u003dece525a4-a992-4ec8-951e-8c51db24bdc1}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:54887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54887/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (99f9b0cee15a0ba7175995446f0f56c9)] -\u003e xpath: (//div[@class\u003d\u0027a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left\u0027])]\nSession ID: 99f9b0cee15a0ba7175995446f0f56c9\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.the_user_selects_the_appropriate_filter_to_list_the_products_he_has_listed(amazonStepDefinitions.java:187)\r\n\tat ✽.The user selects the appropriate filter to list the products he has listed.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:22)\r\n",
+              "duration": 15065000000,
+              "status": "failed"
             },
             "line": 22,
             "name": "The user selects the appropriate filter to list the products he has listed.",
@@ -1014,17 +1034,6 @@
               "location": "ui.stepDefinitions.amazonStepDefinitions.the_user_selects_the_appropriate_filter_to_list_the_products_he_has_listed()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "The user sees that the filtered products are listed.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSeesThatTheFilteredProductsAreListed()"
-            },
-            "keyword": "And "
           },
           {
             "result": {
@@ -1051,7 +1060,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:36:34.313Z",
+        "start_timestamp": "2022-03-03T15:57:01.299Z",
         "line": 41,
         "name": "US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same.",
         "description": "",
@@ -1061,9 +1070,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)\r\n",
-              "duration": 1005500,
-              "status": "failed"
+              "duration": 1240000000,
+              "status": "passed"
             },
             "line": 32,
             "name": "User goes to url.",
@@ -1074,7 +1082,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//span[@class\u003d\u0027a-price-whole\u0027])\"}\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_312\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [99f9b0cee15a0ba7175995446f0f56c9, findElement {using\u003dxpath, value\u003d(//span[@class\u003d\u0027a-price-whole\u0027])}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:54887}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54887/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 99f9b0cee15a0ba7175995446f0f56c9\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy20.getText(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserSearchesAndListsTheHeWantsToBuyInTheSearchBox(amazonStepDefinitions.java:213)\r\n\tat ✽.The user searches and lists the \"macbook\" he wants to buy in the search box(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:33)\r\n",
+              "duration": 25684000000,
+              "status": "failed"
             },
             "line": 33,
             "name": "The user searches and lists the \"macbook\" he wants to buy in the search box",
@@ -1144,7 +1154,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:36:34.321Z",
+        "start_timestamp": "2022-03-03T15:57:28.234Z",
         "line": 42,
         "name": "US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same.",
         "description": "",
@@ -1154,9 +1164,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51020/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)\r\n",
-              "duration": 1996500,
-              "status": "failed"
+              "duration": 1744000000,
+              "status": "passed"
             },
             "line": 32,
             "name": "User goes to url.",
@@ -1167,7 +1176,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9569000000,
+              "status": "passed"
             },
             "line": 33,
             "name": "The user searches and lists the \"gaming mouse\" he wants to buy in the search box",
@@ -1184,7 +1194,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 4681000000,
+              "status": "passed"
             },
             "line": 34,
             "name": "The user chooses the products he wants to buy.",
@@ -1195,7 +1206,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 5034000000,
+              "status": "passed"
             },
             "line": 35,
             "name": "User goes to cart.",
@@ -1206,7 +1218,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 29000000,
+              "status": "passed"
             },
             "line": 36,
             "name": "The user confirms that the selected products have been added to the cart.",
@@ -1217,7 +1230,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 24000000,
+              "status": "passed"
             },
             "line": 37,
             "name": "The user confirms that the total price of the selected products is the same as the total price in the basket.",
@@ -1273,7 +1287,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107797438900,
+              "duration": 1321000000,
               "status": "passed"
             },
             "line": 6,
@@ -1285,9 +1299,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [1349b8861a95674efa26ff943b35f263, clickElement {id\u003d74112a45-fb22-4c1e-9a37-865111d005a1}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50571}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50571/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (1349b8861a95674efa26ff943b35f263)] -\u003e xpath: //a[@id\u003d\u0027nav-link-accountList\u0027]]\nSession ID: 1349b8861a95674efa26ff943b35f263\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton(amazonStepDefinitions.java:109)\r\n\tat ✽.The user clicks the Sign-In button..(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:7)\r\n",
-              "duration": 31938205200,
-              "status": "failed"
+              "duration": 1063000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "The user clicks the Sign-In button..",
@@ -1298,7 +1311,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 85000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "User enters valid email.",
@@ -1309,7 +1323,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1282000000,
+              "status": "passed"
             },
             "line": 9,
             "name": "The user clicks the continue button.",
@@ -1320,7 +1335,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 51000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "User enters valid password.",
@@ -1331,7 +1347,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 69000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "The user clicks the Sign-In button.",
@@ -1342,7 +1359,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3230000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "User hover-over Account \u0026Lists.",
@@ -1353,7 +1371,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1603000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "The user clicks on the Create a List link.",
@@ -1364,7 +1383,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 94000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "User clicks Create a List button.",
@@ -1375,8 +1395,8 @@
           },
           {
             "result": {
-              "duration": 1001300,
-              "status": "skipped"
+              "duration": 791000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "User enters List Name.",
@@ -1387,8 +1407,8 @@
           },
           {
             "result": {
-              "duration": 1000300,
-              "status": "skipped"
+              "duration": 2078000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "User clicks end of Create a List button.",
@@ -1400,7 +1420,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:32:41.728Z",
+        "start_timestamp": "2022-03-03T15:57:49.323Z",
         "line": 19,
         "name": "US_08 User should be able to create and delete shoppingList.",
         "description": "",
@@ -1410,7 +1430,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 1411000000,
+              "status": "passed"
             },
             "line": 21,
             "name": "User verifies that the list is created.",
@@ -1421,7 +1442,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2255000000,
+              "status": "passed"
             },
             "line": 22,
             "name": "User goes to Manage list.",
@@ -1432,7 +1454,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2750000000,
+              "status": "passed"
             },
             "line": 23,
             "name": "User clicks on Delete list button",
@@ -1443,7 +1466,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1467000000,
+              "status": "passed"
             },
             "line": 24,
             "name": "The user confirms that the list has been deleted.",
@@ -1454,8 +1478,8 @@
           },
           {
             "result": {
-              "duration": 992600,
-              "status": "skipped"
+              "duration": 911000000,
+              "status": "passed"
             },
             "line": 25,
             "name": "The user closes the page.",
@@ -1486,9 +1510,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50587}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50587/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:93)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:6)\r\n",
-              "duration": 3002300,
-              "status": "failed"
+              "duration": 6097000000,
+              "status": "passed"
             },
             "line": 6,
             "name": "User goes to url.",
@@ -1499,7 +1522,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1489000000,
+              "status": "passed"
             },
             "line": 7,
             "name": "The user clicks the Sign-In button..",
@@ -1510,7 +1534,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 87000000,
+              "status": "passed"
             },
             "line": 8,
             "name": "User enters valid email.",
@@ -1521,7 +1546,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1109000000,
+              "status": "passed"
             },
             "line": 9,
             "name": "The user clicks the continue button.",
@@ -1532,7 +1558,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 55000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "User enters valid password.",
@@ -1543,7 +1570,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 61000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "The user clicks the Sign-In button.",
@@ -1554,7 +1582,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3342000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "User hover-over Account \u0026Lists.",
@@ -1565,7 +1594,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1788000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "The user clicks on the Create a List link.",
@@ -1576,7 +1606,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 84000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "User clicks Create a List button.",
@@ -1587,7 +1618,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 423000000,
+              "status": "passed"
             },
             "line": 15,
             "name": "User enters List Name.",
@@ -1598,7 +1630,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2056000000,
+              "status": "passed"
             },
             "line": 16,
             "name": "User clicks end of Create a List button.",
@@ -1610,7 +1643,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-03-01T12:35:01.496Z",
+        "start_timestamp": "2022-03-03T15:58:09.793Z",
         "line": 39,
         "name": "US_09 User should be able to create and delete shoppingList.",
         "description": "",
@@ -1620,7 +1653,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 2155000000,
+              "status": "passed"
             },
             "line": 30,
             "name": "User types the \"iphone 13 512\" in the search box.",
@@ -1637,7 +1671,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3218000000,
+              "status": "passed"
             },
             "line": 31,
             "name": "The user goes to the product page.",
@@ -1648,7 +1683,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 278000000,
+              "status": "passed"
             },
             "line": 32,
             "name": "User clicks Add to List button.",
@@ -1659,7 +1695,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//a[@class\u003d\u0027a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal\u0027])[1]\"}\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_312\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [3e851dd16a6282228fed9e0db8821528, findElement {using\u003dxpath, value\u003d(//a[@class\u003d\u0027a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal\u0027])[1]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:55034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55034/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3e851dd16a6282228fed9e0db8821528\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy20.getText(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList(amazonStepDefinitions.java:356)\r\n\tat ✽.The user confirms that the selected product has been added to the list.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:33)\r\n",
+              "duration": 15351000000,
+              "status": "failed"
             },
             "line": 33,
             "name": "The user confirms that the selected product has been added to the list.",
