@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
-
 public class AmazonPage {
 
     public AmazonPage(){
@@ -64,6 +62,7 @@ public class AmazonPage {
 
     @FindBy(xpath = "(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]")
     public WebElement firstProduct;
+
 
     @FindBy(xpath = "(//span[@class='a-price-whole'])")
     public WebElement prodPrice;
@@ -125,6 +124,9 @@ public class AmazonPage {
      @FindBy(xpath = "(//input[@id='add-to-wishlist-button-submit'])")
      public WebElement productAddToListButon;
 
+     @FindBy(xpath = "(//span[@id='huc-view-your-list-button'])")
+     public WebElement ViewYourList;
+
      @FindBy(xpath = "//span[@id='productTitle']")
      public WebElement productName;
 
@@ -143,10 +145,14 @@ public class AmazonPage {
      @FindBy(xpath = "(//div[@class='a-box a-alert-inline a-alert-inline-success']//div//div)")
     public WebElement deleteIsDisplayed;
 
-@FindBy(linkText = "Accessories & Supplies")
+    @FindBy(linkText = "Accessories & Supplies")
     public WebElement allAccessories;
 
     @FindBy(xpath = "(//span[@id='nav-search-label-id'])")
     public WebElement AllMenuDogrulama;
+
+
+
+
 
 }

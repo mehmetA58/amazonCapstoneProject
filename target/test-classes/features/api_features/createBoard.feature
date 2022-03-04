@@ -22,3 +22,8 @@ Feature: Trello Board Create
 #      Then  Assert status code 200
       #And   Assert Deleting
 
+Scenario: Create example
+  Given birtane board create edelim.
+
+  Scenario: Create a card
+    Given birtane card create edelim

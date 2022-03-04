@@ -337,22 +337,28 @@ try {
         Assert.assertTrue(amazonPage.forAllYourShoppingNeeds.isDisplayed());
         Log.info("liste silindi ,for all your shopping needs yazisi görünür");
     }
-
+//    String firstProduct=amazonPage.firstProduct.getText();
     @Then("The user goes to the product page.")
     public void theUserGoesToTheProductPage() throws InterruptedException {
         ReusableMethods.waitForPageToLoad(3);
+
         amazonPage.firstProduct.click();
+
+        ReusableMethods.waitForPageToLoad(3);
     }
 
     @And("User clicks Add to List button.")
-    public void userClicksAddToListButton() {
+    public void userClicksAddToListButton() throws InterruptedException {
         ReusableMethods.waitForPageToLoad(10);
         amazonPage.productAddToListButon.click();
+        Thread.sleep(2000);
+        amazonPage.viewYourList.click();
     }
 
     @Then("The user confirms that the selected product has been added to the list.")
     public void theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList() {
         String productList = Driver.getDriver().findElement(By.xpath("//h2//a")).getCssValue("title");
+
         Assert.assertTrue(amazonPage.firstProduct.getText().contains(productList));
         Log.info("ürün listeye ekleme doğrulandi");
     }

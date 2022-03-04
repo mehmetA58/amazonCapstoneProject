@@ -1,4 +1,1 @@
-file:src/test/resources/features/ui_features/amazonAllMenu.feature:4
-file:src/test/resources/features/ui_features/login.feature:22
 file:src/test/resources/features/ui_features/shopingList.feature:39
-file:src/test/resources/features/ui_features/productSelectAndList.feature:28:41

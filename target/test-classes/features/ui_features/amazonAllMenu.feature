@@ -6,4 +6,4 @@ Feature: All Menu
     When kullanici ALL butonuna tiklar
     Then kullanici "Electronics" Basligina Tiklar
     And The user should be able to see and click all the titles in the ALL menu.
-    #And assert titles
+#    And assert titles
