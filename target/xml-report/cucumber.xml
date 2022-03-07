@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="90.077">
+    <testcase classname="login" name="US01_TC01 User must be able to login to the Site with a valid URL" time="37.152">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user verifies that at "https://www.amazon.com/"....................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="login" name="US02_TC01 The user should be able to login with valid information. (Positive Login)" time="23.689">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................passed
+Then The user clicks the Sign-In button.....................................passed
+And The user sees the text "Hello,USER".....................................passed
+Then User logs out of account...............................................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="login" name="US02_TC02 The user should not be able to login with invalid information. (Negative Login)" time="15.902">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters invalid password...........................................passed
+Then The user clicks the Sign-In button.....................................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="login" name="US02_TC03 The user should not be able to login with invalid information. (Negative Login)" time="13.099">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters invalid email..............................................passed
+Then The user clicks the continue button....................................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
