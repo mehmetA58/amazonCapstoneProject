@@ -125,7 +125,7 @@ try {
     @When("User enters valid password.")
     public void userEntersValidPassword() {
         amazonPage.passwordInput.sendKeys(ConfigReader.getProperty("ValidPassword"));
-        amazonPage.passwordInput.sendKeys(ConfigReader.getProperty("123456"));
+
     }
 
     @Then("The user clicks the Sign-In button.")
@@ -144,8 +144,9 @@ try {
     }
 
     @And("The user sees the Your password is incorrect.")
-    public void theUserSeesTheYourPasswordIsIncorrect() {
+    public void theUserSeesTheYourPasswordIsIncorrect() throws InterruptedException {
         System.out.println(amazonPage.wrongPasswordText.getText());
+        wait(3);
         amazonPage.wrongPasswordText.getText().contains("There was a problem");
     }
 
