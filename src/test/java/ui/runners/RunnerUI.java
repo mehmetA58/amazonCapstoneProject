@@ -16,10 +16,10 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features/ui_features",
         glue = "ui/stepDefinitions",
-        tags = "@us09",
+        tags = "",
         dryRun =false
 )
 
 
-public class Runner {
+public class RunnerUI {
 }

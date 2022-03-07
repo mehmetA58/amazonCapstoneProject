@@ -18,7 +18,7 @@ Feature: Trello Board Create
 
 
   Scenario: Delete Board
-      Given Send request for delete "M3Xtk3tb"
+      Given Send request for delete "kk5RDIXS"
 #      Then  Assert status code 200
       #And   Assert Deleting
 

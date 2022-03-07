@@ -97,7 +97,8 @@ try {
 
     @Then("The user verifies that at {string}.")
     public void theUserVerifiesThatAt(String pageURL) {
-        Driver.getDriver().getCurrentUrl().equals(pageURL);
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().equals(pageURL));
+
 
     }
 
@@ -124,6 +125,7 @@ try {
     @When("User enters valid password.")
     public void userEntersValidPassword() {
         amazonPage.passwordInput.sendKeys(ConfigReader.getProperty("ValidPassword"));
+        amazonPage.passwordInput.sendKeys(ConfigReader.getProperty("123456"));
     }
 
     @Then("The user clicks the Sign-In button.")
