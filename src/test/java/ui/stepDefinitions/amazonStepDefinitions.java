@@ -360,7 +360,7 @@ try {
 
     @Then("The user confirms that the selected product has been added to the list.")
     public void theUserConfirmsThatTheSelectedProductHasBeenAddedToTheList() {
-        String productList = Driver.getDriver().findElement(By.xpath("//h2//a")).getCssValue("title");
+        String productList = Driver.getDriver().findElement(By.xpath("//h2//a")).getAttribute("title");
 
         Assert.assertTrue(amazonPage.firstProduct.getText().contains(productList));
         Log.info("ürün listeye ekleme doğrulandi");

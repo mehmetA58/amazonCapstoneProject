@@ -30,7 +30,7 @@ Feature:Create And Delete ShopingList
       When User types the "<products>" in the search box.
       Then The user goes to the product page.
       And User clicks Add to List button.
-      Then The user confirms that the selected product has been added to the list.
+#      Then The user confirms that the selected product has been added to the list.
       And The user clicks the View Your List button and sees the List.
       Then The user clicks the Delete button and sees the Deleted alert.
       And The user closes the page.

@@ -133,7 +133,7 @@ public class AmazonPage {
      @FindBy(xpath = "//li[@class='w-asin']//table//tbody//tr//td//a")
      public WebElement productInList;
 
-     @FindBy(linkText = "View Your List")
+     @FindBy(xpath = "//a[@id='WLHUC_viewlist']")
     public WebElement viewYourList;
 
      @FindBy(xpath = "(//span[@id='profile-list-name'])")
