@@ -125,7 +125,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>true</perCoreThreadCount>
-                            <threadCountMethods>5</threadCountMethods>
+                            <threadCountMethods>10</threadCountMethods>
 
                             <includes>
                                 <include>**ui/runners/ParallelTestUI.java</include>
@@ -148,7 +148,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>true</perCoreThreadCount>
-                            <threadCountMethods>5</threadCountMethods>
+                            <threadCountMethods>10</threadCountMethods>
 
                             <includes>
                                 <include>**/Runner_Api.java</include>

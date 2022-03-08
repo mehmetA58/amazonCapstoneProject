@@ -63,32 +63,34 @@ public class amazonStepDefinitions {
     }
 
 
-    @And("kullanici {string} Basligina Tiklar")
-    public void kullaniciBasliginaTiklar(String title) throws InterruptedException {
+    @Then("kullanici {string} Basligina Tiklar ve daha sonra {string}")
+    public void kullaniciBasliginaTiklarVeDahaSonra(String title, String electronics) throws InterruptedException {
         List<WebElement> titles=Driver.getDriver().findElements(By.xpath("//a[@class='hmenu-item']//div"));
         for (int i = 0; i <titles.size() ; i++) {
-        Thread.sleep(3000);
             if (titles.get(i).getText().equals(title)) {
+                ReusableMethods.waitFor(2);
                 titles.get(i).click();
             }
+
         }
+
+
+        List<WebElement> InElectronics=Driver.getDriver().findElements(By.xpath("//ul[@class='hmenu hmenu-visible hmenu-translateX']//li//a"));
+
+        for (int i = 0; i <InElectronics.size() ; i++) {
+            if (InElectronics.get(i).getText().equals(electronics)) {
+                ReusableMethods.waitFor(2);
+                try {
+                    InElectronics.get(i).click();
+                }catch (StaleElementReferenceException e){
+
+                }
+
+            }
+        }
+
     }
 
-    @Then("The user should be able to see and click all the titles in the ALL menu.")
-    public void theUserShouldBeAbleToSeeAndClickAllTheTitlesInTheALLMenu() {
-try {
-
-
-    List<WebElement> electronics = Driver.getDriver().findElements(By.xpath("//div[@id='hmenu-content']//ul[5]//li"));
-    for (int i = 0; i < electronics.size(); i++) {
-        Random r = new Random();
-        electronics.get(r.nextInt(electronics.size())).click();
-    }
-}catch (StaleElementReferenceException staleElementReferenceException ){
-
-}
-
-    }
 
     @Given("User goes to url.")
     public void userGoesToUrl() {
@@ -382,8 +384,9 @@ try {
         Log.info("Listedeki ürünü silme basarili");
     }
 
-    @And("assert titles")
-    public void assertTitles() {
 
+    @And("assert titles for {string}")
+    public void assertTitlesFor(String dropDownTitle) {
+        Assert.assertTrue(amazonPage.AllMenuDogrulama.getText().contains(dropDownTitle));
     }
 }
