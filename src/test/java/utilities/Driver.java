@@ -89,8 +89,8 @@ public class Driver {
                     try {
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName(BrowserType.CHROME);
-                        desiredCapabilities.setCapability("platform", Platform.ANY);
-                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities));
+                        desiredCapabilities.setCapability("platform", Platform.ANDROID);
+                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities));
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -110,8 +110,8 @@ public class Driver {
                     driverPool.set(new ChromeDriver());
 
             }
-            driverPool.get().manage().window().maximize();
-            driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            //driverPool.get().manage().window().maximize();
+            //driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         }
         return driverPool.get();
