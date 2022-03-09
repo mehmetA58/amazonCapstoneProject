@@ -110,8 +110,8 @@ public class Driver {
                     driverPool.set(new ChromeDriver());
 
             }
-            //driverPool.get().manage().window().maximize();
-            //driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            driverPool.get().manage().window().maximize();
+            driverPool.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         }
         return driverPool.get();
