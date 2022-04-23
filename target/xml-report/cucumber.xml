@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="44.586">
+    <testcase classname="login" name="US01_TC01 User must be able to login to the Site with a valid URL" time="32.092">
+        <failure message="Failed to instantiate class ui.stepDefinitions.amazonStepDefinitions" type="io.cucumber.core.exception.CucumberException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user verifies that at "https://www.amazon.com/"....................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+io.cucumber.core.exception.CucumberException: Failed to instantiate class ui.stepDefinitions.amazonStepDefinitions
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:149)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:133)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:141)
+	... 39 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfe02041bffe35ae1a819e153d397fba, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cfe02041bffe35ae1a819e153d397fba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)
+	at utilities.Driver.getDriver(Driver.java:113)
+	at ui.pages.AmazonPage.<init>(AmazonPage.java:12)
+	at ui.stepDefinitions.amazonStepDefinitions.<init>(amazonStepDefinitions.java:33)
+	... 44 more
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US02_TC01 The user should be able to login with valid information. (Positive Login)" time="4.061">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cfe02041bffe35ae1a819e153d397fba" type="org.openqa.selenium.WebDriverException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters valid email................................................skipped
+Then The user clicks the continue button....................................skipped
+When User enters valid password.............................................skipped
+Then The user clicks the Sign-In button.....................................skipped
+And The user sees the text "Hello,USER".....................................skipped
+Then User logs out of account...............................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cfe02041bffe35ae1a819e153d397fba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:13)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US02_TC02 The user should not be able to login with invalid information. (Negative Login)" time="4.037">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cfe02041bffe35ae1a819e153d397fba" type="org.openqa.selenium.WebDriverException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters valid email................................................skipped
+Then The user clicks the continue button....................................skipped
+When User enters invalid password...........................................skipped
+Then The user clicks the Sign-In button.....................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cfe02041bffe35ae1a819e153d397fba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:24)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US02_TC03 The user should not be able to login with invalid information. (Negative Login)" time="4.035">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cfe02041bffe35ae1a819e153d397fba" type="org.openqa.selenium.WebDriverException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters invalid email..............................................skipped
+Then The user clicks the continue button....................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=100.0.4896.127)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.33', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfe02041bffe35ae1a819e153d397fba, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cfe02041bffe35ae1a819e153d397fba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:34)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

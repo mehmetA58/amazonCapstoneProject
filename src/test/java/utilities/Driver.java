@@ -37,7 +37,7 @@ public class Driver {
 
     public static WebDriver getDriver(){
         if (driverPool.get() == null) {
-            System.out.println("TRYING TO CREATE DRIVER");
+
             // this line will tell which browser should open based on the value from properties file
             String browserParamFromEnv = System.getProperty("browser");
             String browser = browserParamFromEnv == null ? ConfigReader.getProperty("browser") : browserParamFromEnv;

@@ -23,7 +23,7 @@ public class APIRequests {
         RestAssured.baseURI = "https://api.trello.com/1";
 
         RequestSpecification httpRequest = RestAssured.given();
-
+//Response alma metodumuz
         JSONObject requestParams = new JSONObject();
         requestParams.put("key", "57d9b658cbed958b7146ccb29a08a0e7");
         requestParams.put("token","5d2a4ca448bc14f34cb6130e3c353af2d4e3331debaf83651a8652f6064f666f");

@@ -389,4 +389,16 @@ public class amazonStepDefinitions {
     public void assertTitlesFor(String dropDownTitle) {
         Assert.assertTrue(amazonPage.AllMenuDogrulama.getText().contains(dropDownTitle));
     }
+
+    @And("User selects first product in list")
+    public void userSelectsFirstProductInList() throws InterruptedException {
+        Thread.sleep(3000);
+        amazonPage.firstProduct.click();
+
+    }
+
+    @Then("User clicks Add the product to Cart")
+    public void userClicksAddTheProductToCart() {
+        amazonPage.addToCartButon.click();
+    }
 }
