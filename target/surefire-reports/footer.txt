@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: footer
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 119.853 s <<< FAILURE! - in footer
+US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page.(footer)  Time elapsed: 119.853 s  <<< ERROR!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a11526dbff0970bd4a20f65c6cbc588e, clickElement {id=3c477428-b16f-4644-bffd-292c6d042298}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a11526dbff0970bd4a20f65c6cbc588e)] -> xpath: (//a[@class='nav_a'])]
+Session ID: a11526dbff0970bd4a20f65c6cbc588e
+

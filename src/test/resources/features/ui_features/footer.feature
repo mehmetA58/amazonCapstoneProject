@@ -1,6 +1,7 @@
 @Regression
   @footer
   @us07
+@smoke
 Feature:footer
   Scenario: US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page.
   Given User goes to url.

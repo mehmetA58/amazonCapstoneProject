@@ -3,52 +3,58 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-06-25T17:55:22.030Z",
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
         "line": 4,
-        "name": "Create New Board POST",
+        "name": "US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed.",
         "description": "",
-        "id": "trello-e2e-test;create-new-board-post",
+        "id": "all-menu;us03-tc01-the-user-should-be-able-to-select-any-category-from-the-all-menu-and-see-the-subcategories-listed.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4203343900,
+              "duration": 96254331200,
               "status": "passed"
             },
             "line": 5,
-            "name": "Send request for create \"amazonCapStoneTrelloProje\" board",
+            "name": "User goes to url.",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"amazonCapStoneTrelloProje\"",
-                  "offset": 24
-                }
-              ],
-              "location": "api.stepDefinitions.TestTrello.sendRequestForCreateBoard(java.lang.String)"
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected:\u003c404\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat api.stepDefinitions.APIRequests.createNewCard(APIRequests.java:69)\r\n\tat api.stepDefinitions.TestTrello.sendRequestForCreateCardAnd(TestTrello.java:26)\r\n\tat ✽.Send request for create \"Mehmet\u0027sCard\" card and \"AhmetCard\u0027s\"(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/api_features/Trello_e2e.feature:6)\r\n",
-              "duration": 359393200,
-              "status": "failed"
+              "duration": 16675164600,
+              "status": "passed"
             },
             "line": 6,
-            "name": "Send request for create \"Mehmet\u0027sCard\" card and \"AhmetCard\u0027s\"",
+            "name": "kullanici ALL butonuna tiklar",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.kullaniciALLButonunaTiklar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat ui.stepDefinitions.amazonStepDefinitions.kullaniciBasliginaTiklarVeDahaSonra(amazonStepDefinitions.java:70)\r\n\tat ✽.kullanici \"Electronics\" Basligina Tiklar ve daha sonra \"Computers \u0026 Accessories\"(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonAllMenu.feature:7)\r\n",
+              "duration": 6968629100,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "kullanici \"Electronics\" Basligina Tiklar ve daha sonra \"Computers \u0026 Accessories\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Mehmet\u0027sCard\"",
-                  "offset": 24
+                  "val": "\"Electronics\"",
+                  "offset": 10
                 },
                 {
-                  "val": "\"AhmetCard\u0027s\"",
-                  "offset": 48
+                  "val": "\"Computers \u0026 Accessories\"",
+                  "offset": 55
                 }
               ],
-              "location": "api.stepDefinitions.TestTrello.sendRequestForCreateCardAnd(java.lang.String,java.lang.String)"
+              "location": "ui.stepDefinitions.amazonStepDefinitions.kullaniciBasliginaTiklarVeDahaSonra(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           },
@@ -56,16 +62,536 @@
             "result": {
               "status": "skipped"
             },
-            "line": 7,
-            "name": "Send request for update \"Mehmet\u0027sCard update edildi\" board",
+            "line": 8,
+            "name": "assert titles for \"Computers\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Mehmet\u0027sCard update edildi\"",
-                  "offset": 24
+                  "val": "\"Computers\"",
+                  "offset": 18
                 }
               ],
-              "location": "api.stepDefinitions.TestTrello.sendRequestForUpdateBoard(java.lang.String)"
+              "location": "ui.stepDefinitions.amazonStepDefinitions.assertTitlesFor(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "All Menu",
+    "description": "",
+    "id": "all-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/amazonAllMenu.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
+        "line": 17,
+        "name": "e2e",
+        "description": "",
+        "id": "ui-e2e;e2e;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 95594910400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17256533900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User types the \"water\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"water\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [59584afc7c331fa43d22bb6ad12f7ca1, findElement {using\u003dxpath, value\u003d(//a[@class\u003d\u0027a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal\u0027])[1]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 59584afc7c331fa43d22bb6ad12f7ca1\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userSelectsFirstProductInList(amazonStepDefinitions.java:396)\r\n\tat ✽.User selects first product in list(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/e2e.feature:11)\r\n",
+              "duration": 9803890400,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User selects first product in list",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userSelectsFirstProductInList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User clicks Add the product to Cart",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksAddTheProductToCart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User goes to cart.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UIE2e"
+          }
+        ]
+      }
+    ],
+    "name": "UI E2E",
+    "description": "",
+    "id": "ui-e2e",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/e2e.feature",
+    "tags": [
+      {
+        "name": "@UIE2e",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
+        "line": 5,
+        "name": "US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page.",
+        "description": "",
+        "id": "footer;us07-tc01-the-user-should-make-sure-that-the-links-in-any-row-or-column-of-the-links-at-the-bottom-of-the-home-page-lead-to-the-correct-page.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97994447800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2623221100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User goes to FOOTER.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToFOOTER()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [a11526dbff0970bd4a20f65c6cbc588e, clickElement {id\u003d3c477428-b16f-4644-bffd-292c6d042298}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (a11526dbff0970bd4a20f65c6cbc588e)] -\u003e xpath: (//a[@class\u003d\u0027nav_a\u0027])]\nSession ID: a11526dbff0970bd4a20f65c6cbc588e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnALink(amazonStepDefinitions.java:270)\r\n\tat ✽.The user clicks on a link.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/footer.feature:8)\r\n",
+              "duration": 19061471300,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "The user clicks on a link.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnALink()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user verifies the title of the page he is directed to.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserVerifiesTheTitleOfThePageHeIsDirectedTo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@footer"
+          },
+          {
+            "name": "@us07"
+          }
+        ]
+      }
+    ],
+    "name": "footer",
+    "description": "",
+    "id": "footer",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/footer.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@footer",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 3
+        }
+      },
+      {
+        "name": "@us07",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
+        "line": 6,
+        "name": "US01_TC01 User must be able to login to the Site with a valid URL",
+        "description": "",
+        "id": "login;us01-tc01-user-must-be-able-to-login-to-the-site-with-a-valid-url",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 84913198100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7004700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The user verifies that at \"https://www.amazon.com/\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com/\"",
+                  "offset": 26
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserVerifiesThatAt(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@us01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:29.926Z",
+        "line": 12,
+        "name": "US02_TC01 The user should be able to login with valid information. (Positive Login)",
+        "description": "",
+        "id": "login;us02-tc01-the-user-should-be-able-to-login-with-valid-information.-(positive-login)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6628757500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13535541700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "The user clicks the Sign-In button..",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 569914200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User enters valid email.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2357532000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user clicks the continue button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55934800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters valid password.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75843400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The user clicks the Sign-In button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[@id\u003d\u0027nav-link-accountList-nav-line-1\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.getText(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheText(amazonStepDefinitions.java:140)\r\n\tat ✽.The user sees the text \"Hello,USER\".(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:19)\r\n",
+              "duration": 10570488400,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "The user sees the text \"Hello,USER\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello,USER\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheText(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User logs out of account",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userLogsOutOfAccount()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@us01"
+          },
+          {
+            "name": "@us02"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:52:03.722Z",
+        "line": 23,
+        "name": "US02_TC02 The user should not be able to login with invalid information. (Negative Login)",
+        "description": "",
+        "id": "login;us02-tc02-the-user-should-not-be-able-to-login-with-invalid-information.-(negative-login)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4436d7c5c1a364cb1a6fbff0c76be26e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:24)\r\n",
+              "duration": 15626700,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "The user clicks the Sign-In button..",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User enters valid email.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
             },
             "keyword": "When "
           },
@@ -73,10 +599,638 @@
             "result": {
               "status": "skipped"
             },
-            "line": 8,
-            "name": "Send request for delete card",
+            "line": 27,
+            "name": "The user clicks the continue button.",
             "match": {
-              "location": "api.stepDefinitions.TestTrello.sendRequestForDeleteCard()"
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "User enters invalid password.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersInvalidPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "The user clicks the Sign-In button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@us01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:52:03.738Z",
+        "line": 33,
+        "name": "US02_TC03 The user should not be able to login with invalid information. (Negative Login)",
+        "description": "",
+        "id": "login;us02-tc03-the-user-should-not-be-able-to-login-with-invalid-information.-(negative-login)",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4436d7c5c1a364cb1a6fbff0c76be26e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:34)\r\n",
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "The user clicks the Sign-In button..",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User enters invalid email.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersInvalidEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "The user clicks the continue button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@us01"
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 3
+        }
+      },
+      {
+        "name": "@us01",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
+        "line": 13,
+        "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
+        "description": "",
+        "id": "product;us04-tc01-when-the-user-searches-for-a-product--all-listed-products-must-contain-the-searched-word;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 106328403600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, findElement {using\u003did, value\u003dtwotabsearchtextbox}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.sendKeys(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(amazonStepDefinitions.java:167)\r\n\tat ✽.User types the \"mango\" in the search box.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:8)\r\n",
+              "duration": 1200479000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User types the \"mango\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mango\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User verifies that the \"mango\" he is looking for includes the products listed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mango\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userVerifiesThatTheHeIsLookingForIncludesTheProductsListed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2001100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          },
+          {
+            "name": "@us04"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.758Z",
+        "line": 14,
+        "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
+        "description": "",
+        "id": "product;us04-tc01-when-the-user-searches-for-a-product--all-listed-products-must-contain-the-searched-word;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:7)\r\n",
+              "duration": 10005500,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User types the \"nutella\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nutella\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User verifies that the \"nutella\" he is looking for includes the products listed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nutella\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userVerifiesThatTheHeIsLookingForIncludesTheProductsListed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          },
+          {
+            "name": "@us04"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.780Z",
+        "line": 15,
+        "name": "US04_TC01 When the user searches for a product, all listed products must contain the searched word",
+        "description": "",
+        "id": "product;us04-tc01-when-the-user-searches-for-a-product--all-listed-products-must-contain-the-searched-word;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:7)\r\n",
+              "duration": 5005500,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User types the \"suite case\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"suite case\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User verifies that the \"suite case\" he is looking for includes the products listed.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"suite case\"",
+                  "offset": 23
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userVerifiesThatTheHeIsLookingForIncludesTheProductsListed(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          },
+          {
+            "name": "@us04"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.795Z",
+        "line": 27,
+        "name": "US05_TC01 User should be able to use filters and sorting in product listing process",
+        "description": "",
+        "id": "product;us05-tc01-user-should-be-able-to-use-filters-and-sorting-in-product-listing-process;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)\r\n",
+              "duration": 5013600,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User types the \"macbook\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"macbook\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The user selects the appropriate filter to list the products he has listed.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.the_user_selects_the_appropriate_filter_to_list_the_products_he_has_listed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          },
+          {
+            "name": "@us05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.809Z",
+        "line": 28,
+        "name": "US05_TC01 User should be able to use filters and sorting in product listing process",
+        "description": "",
+        "id": "product;us05-tc01-user-should-be-able-to-use-filters-and-sorting-in-product-listing-process;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)\r\n",
+              "duration": 8004500,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User types the \"gaming mouse\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gaming mouse\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The user selects the appropriate filter to list the products he has listed.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.the_user_selects_the_appropriate_filter_to_list_the_products_he_has_listed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          },
+          {
+            "name": "@us05"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.901Z",
+        "line": 41,
+        "name": "US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same.",
+        "description": "",
+        "id": "product;us06-tc01-user-should-be-able-to-choose-random-products-and-add-to-cart.-you-should-see-that-the-total-price-of-the-added-products-and-the-total-in-the-basket-are-the-same.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)\r\n",
+              "duration": 6004000,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000100,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "The user searches and lists the \"macbook\" he wants to buy in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"macbook\"",
+                  "offset": 32
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSearchesAndListsTheHeWantsToBuyInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "The user chooses the products he wants to buy.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserChoosesTheProductsHeWantsToBuy()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User goes to cart.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToCart()"
             },
             "keyword": "And "
           },
@@ -84,26 +1238,620 @@
             "result": {
               "status": "skipped"
             },
-            "line": 9,
-            "name": "Send request for delete board",
+            "line": 36,
+            "name": "The user confirms that the selected products have been added to the cart.",
             "match": {
-              "location": "api.stepDefinitions.TestTrello.sendRequestForDeleteBoard()"
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheSelectedProductsHaveBeenAddedToTheCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "The user confirms that the total price of the selected products is the same as the total price in the basket.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheTotalPriceOfTheSelectedProductsIsTheSameAsTheTotalPriceInTheBasket()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.917Z",
+        "line": 42,
+        "name": "US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same.",
+        "description": "",
+        "id": "product;us06-tc01-user-should-be-able-to-choose-random-products-and-add-to-cart.-you-should-see-that-the-total-price-of-the-added-products-and-the-total-in-the-basket-are-the-same.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [008ef304740a181c81d6df848d21fd3b, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 008ef304740a181c81d6df848d21fd3b\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)\r\n",
+              "duration": 7005300,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "The user searches and lists the \"gaming mouse\" he wants to buy in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gaming mouse\"",
+                  "offset": 32
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSearchesAndListsTheHeWantsToBuyInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "The user chooses the products he wants to buy.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserChoosesTheProductsHeWantsToBuy()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "User goes to cart.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "The user confirms that the selected products have been added to the cart.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheSelectedProductsHaveBeenAddedToTheCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "The user confirms that the total price of the selected products is the same as the total price in the basket.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheTotalPriceOfTheSelectedProductsIsTheSameAsTheTotalPriceInTheBasket()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@product"
+          }
+        ]
+      }
+    ],
+    "name": "product",
+    "description": "",
+    "id": "product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ui_features/productSelectAndList.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@product",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 3
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "US_08_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 107032426800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fd3ee4fdb8d85e1d082242965b81ebf7, findElement {using\u003dxpath, value\u003d//a[@id\u003d\u0027nav-link-accountList\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fd3ee4fdb8d85e1d082242965b81ebf7\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton(amazonStepDefinitions.java:114)\r\n\tat ✽.The user clicks the Sign-In button..(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:7)\r\n",
+              "duration": 498456800,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The user clicks the Sign-In button..",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters valid email.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user clicks the continue button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enters valid password.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The user clicks the Sign-In button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User hover-over Account \u0026Lists.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userHoverOverAccountLists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The user clicks on the Create a List link.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnTheCreateAListLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User clicks Create a List button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksCreateAListButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enters List Name.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersListName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User clicks end of Create a List button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksEndOfCreateAListButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:50:02.926Z",
+        "line": 19,
+        "name": "US_08 User should be able to create and delete shoppingList.",
+        "description": "",
+        "id": "create-and-delete-shopinglist;us-08-user-should-be-able-to-create-and-delete-shoppinglist.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User verifies that the list is created.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userVerifiesThatTheListIsCreated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000400,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User goes to Manage list.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToManageList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User clicks on Delete list button",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksOnDeleteListButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "The user confirms that the list has been deleted.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserConfirmsThatTheListHasBeenDeleted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@e2e"
+            "name": "@Regression"
+          },
+          {
+            "name": "@shopingList"
+          },
+          {
+            "name": "@us08"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "US_08_09",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d102.0.5005.115)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.38\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [fd3ee4fdb8d85e1d082242965b81ebf7, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: fd3ee4fdb8d85e1d082242965b81ebf7\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:6)\r\n",
+              "duration": 8006000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User goes to url.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "The user clicks the Sign-In button..",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters valid email.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "The user clicks the continue button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User enters valid password.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "The user clicks the Sign-In button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User hover-over Account \u0026Lists.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userHoverOverAccountLists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "The user clicks on the Create a List link.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnTheCreateAListLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User clicks Create a List button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksCreateAListButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enters List Name.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersListName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User clicks end of Create a List button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksEndOfCreateAListButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-25T18:51:50.761Z",
+        "line": 39,
+        "name": "US_09 User should be able to create and delete shoppingList.",
+        "description": "",
+        "id": "create-and-delete-shopinglist;us-09-user-should-be-able-to-create-and-delete-shoppinglist.;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "User types the \"iphone 13 512\" in the search box.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone 13 512\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "The user goes to the product page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserGoesToTheProductPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "User clicks Add to List button.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.userClicksAddToListButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "The user clicks the View Your List button and sees the List.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheViewYourListButtonAndSeesTheList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "The user clicks the Delete button and sees the Deleted alert.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheDeleteButtonAndSeesTheDeletedAlert()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "The user closes the page.",
+            "match": {
+              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@shopingList"
+          },
+          {
+            "name": "@us09"
           }
         ]
       }
     ],
-    "name": "Trello E2E Test",
+    "name": "Create And Delete ShopingList",
     "description": "",
-    "id": "trello-e2e-test",
+    "id": "create-and-delete-shopinglist",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/api_features/Trello_e2e.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/ui_features/shopingList.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@shopingList",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 3
+        }
+      }
+    ]
   }
 ]

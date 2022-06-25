@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: UI E2E
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 122.828 s <<< FAILURE! - in UI E2E
+e2e(UI E2E)  Time elapsed: 122.828 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59584afc7c331fa43d22bb6ad12f7ca1, findElement {using=xpath, value=(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59584afc7c331fa43d22bb6ad12f7ca1
+

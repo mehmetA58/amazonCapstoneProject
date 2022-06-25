@@ -1,0 +1,118 @@
+-------------------------------------------------------------------------------
+Test set: ui.runners.RunnerUI
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 262.129 s <<< FAILURE! - in ui.runners.RunnerUI
+US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed.(All Menu)  Time elapsed: 30.385 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-hamburger\-menu"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=id, value=nav-hamburger-menu}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US02_TC01 The user should be able to login with valid information. (Positive Login)(login)  Time elapsed: 19.203 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='nav-link-accountList-nav-line-1']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US02_TC03 The user should not be able to login with invalid information. (Negative Login)(login)  Time elapsed: 16.38 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@id='nav-link-accountList']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=//a[@id='nav-link-accountList']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US05_TC01 User should be able to use filters and sorting in product listing process #2(product)  Time elapsed: 19.139 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, clickElement {id=42c9f722-6bc3-4381-8e3a-ad8cddb9579d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9707c68c4bb1cdd5a52996dc95219ab2)] -> xpath: (//div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left'])]
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same. #1(product)  Time elapsed: 24.482 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='a-price-whole'])"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=(//span[@class='a-price-whole'])}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same. #2(product)  Time elapsed: 27.268 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class='a-price-whole'])"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=(//span[@class='a-price-whole'])}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US_08 User should be able to create and delete shoppingList.(Create And Delete ShopingList)  Time elapsed: 18.597 s  <<< ERROR!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, actions {actions=[org.openqa.selenium.interactions.Sequence@c2cf597]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='nav-link-accountList-nav-line-1']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+
+US_09 User should be able to create and delete shoppingList.(Create And Delete ShopingList)  Time elapsed: 18.854 s  <<< ERROR!
+org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, actions {actions=[org.openqa.selenium.interactions.Sequence@72fbf94d]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[@id='nav-link-accountList-nav-line-1']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9707c68c4bb1cdd5a52996dc95219ab2, findElement {using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50378}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50378/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9707c68c4bb1cdd5a52996dc95219ab2
+

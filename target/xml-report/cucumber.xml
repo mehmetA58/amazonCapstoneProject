@@ -1,22 +1,552 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.718">
-    <testcase classname="Trello E2E Test" name="Create New Board POST" time="4.578">
-        <failure message="expected:&lt;404&gt; but was:&lt;200&gt;" type="java.lang.AssertionError">
-            <![CDATA[Given Send request for create "amazonCapStoneTrelloProje" board.............passed
-Then Send request for create "Mehmet'sCard" card and "AhmetCard's"..........failed
-When Send request for update "Mehmet'sCard update edildi" board.............skipped
-And Send request for delete card............................................skipped
-And Send request for delete board...........................................skipped
+<testsuite errors="0" failures="15" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="122.89">
+    <testcase classname="All Menu" name="US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed." time="119.901">
+        <failure message="" type="java.lang.NullPointerException">
+            <![CDATA[Given User goes to url......................................................passed
+When kullanici ALL butonuna tiklar..........................................passed
+Then kullanici "Electronics" Basligina Tiklar ve daha sonra "Computers & Accessories".failed
+And assert titles for "Computers"...........................................skipped
+And The user closes the page................................................skipped
 
 StackTrace:
-java.lang.AssertionError: expected:<404> but was:<200>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at api.stepDefinitions.APIRequests.createNewCard(APIRequests.java:69)
-	at api.stepDefinitions.TestTrello.sendRequestForCreateCardAnd(TestTrello.java:26)
-	at ✽.Send request for create "Mehmet'sCard" card and "AhmetCard's"(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/api_features/Trello_e2e.feature:6)
+java.lang.NullPointerException
+	at ui.stepDefinitions.amazonStepDefinitions.kullaniciBasliginaTiklarVeDahaSonra(amazonStepDefinitions.java:70)
+	at ✽.kullanici "Electronics" Basligina Tiklar ve daha sonra "Computers & Accessories"(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/amazonAllMenu.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="UI E2E" name="e2e" time="122.656">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [59584afc7c331fa43d22bb6ad12f7ca1, findElement {using=xpath, value=(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 59584afc7c331fa43d22bb6ad12f7ca1" type="org.openqa.selenium.WebDriverException">
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "water" in the search box...............................passed
+And User selects first product in list......................................failed
+Then User clicks Add the product to Cart....................................skipped
+And User goes to cart.......................................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59584afc7c331fa43d22bb6ad12f7ca1, findElement {using=xpath, value=(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50867}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 59584afc7c331fa43d22bb6ad12f7ca1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.userSelectsFirstProductInList(amazonStepDefinitions.java:396)
+	at ✽.User selects first product in list(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/e2e.feature:11)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="footer" name="US07_TC01 The user should make sure that the links in any row or column of the links at the bottom of the home page lead to the correct page." time="119.681">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a11526dbff0970bd4a20f65c6cbc588e, clickElement {id=3c477428-b16f-4644-bffd-292c6d042298}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (a11526dbff0970bd4a20f65c6cbc588e)] -&gt; xpath: (//a[@class='nav_a'])]&#10;Session ID: a11526dbff0970bd4a20f65c6cbc588e" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................passed
+When User goes to FOOTER....................................................passed
+Then The user clicks on a link..............................................failed
+And The user verifies the title of the page he is directed to...............skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a11526dbff0970bd4a20f65c6cbc588e, clickElement {id=3c477428-b16f-4644-bffd-292c6d042298}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a11526dbff0970bd4a20f65c6cbc588e)] -> xpath: (//a[@class='nav_a'])]
+Session ID: a11526dbff0970bd4a20f65c6cbc588e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at ui.stepDefinitions.amazonStepDefinitions.theUserClicksOnALink(amazonStepDefinitions.java:270)
+	at ✽.The user clicks on a link.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/footer.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US01_TC01 User must be able to login to the Site with a valid URL" time="86.983">
+        <system-out>
+            <![CDATA[Given User goes to url......................................................passed
+Then The user verifies that at "https://www.amazon.com/"....................passed
+And The user closes the page................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="login" name="US02_TC01 The user should be able to login with valid information. (Positive Login)" time="33.796">
+        <failure message="Unable to find element with locator By.xpath: //span[@id='nav-link-accountList-nav-line-1']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................passed
+When User enters valid email................................................passed
+Then The user clicks the continue button....................................passed
+When User enters valid password.............................................passed
+Then The user clicks the Sign-In button.....................................passed
+And The user sees the text "Hello,USER".....................................failed
+Then User logs out of account...............................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //span[@id='nav-link-accountList-nav-line-1']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.getText(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheText(amazonStepDefinitions.java:140)
+	at ✽.The user sees the text "Hello,USER".(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:19)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US02_TC02 The user should not be able to login with invalid information. (Negative Login)" time="0.015">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4436d7c5c1a364cb1a6fbff0c76be26e" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters valid email................................................skipped
+Then The user clicks the continue button....................................skipped
+When User enters invalid password...........................................skipped
+Then The user clicks the Sign-In button.....................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4436d7c5c1a364cb1a6fbff0c76be26e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:24)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="login" name="US02_TC03 The user should not be able to login with invalid information. (Negative Login)" time="0">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4436d7c5c1a364cb1a6fbff0c76be26e" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters invalid email..............................................skipped
+Then The user clicks the continue button....................................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4436d7c5c1a364cb1a6fbff0c76be26e, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50862/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4436d7c5c1a364cb1a6fbff0c76be26e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:34)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word" time="107.82">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, findElement {using=id, value=twotabsearchtextbox}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................passed
+When User types the "mango" in the search box...............................failed
+Then User verifies that the "mango" he is looking for includes the products listed..skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.sendKeys(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.userTypesTheInTheSearchBox(amazonStepDefinitions.java:167)
+	at ✽.User types the "mango" in the search box.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:8)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word 2" time="0.014">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When User types the "nutella" in the search box.............................skipped
+Then User verifies that the "nutella" he is looking for includes the products listed..skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US04_TC01 When the user searches for a product, all listed products must contain the searched word 3" time="0.007">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When User types the "suite case" in the search box..........................skipped
+Then User verifies that the "suite case" he is looking for includes the products listed..skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US05_TC01 User should be able to use filters and sorting in product listing process" time="0.006">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When User types the "macbook" in the search box.............................skipped
+Then The user selects the appropriate filter to list the products he has listed..skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US05_TC01 User should be able to use filters and sorting in product listing process 2" time="0.009">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When User types the "gaming mouse" in the search box........................skipped
+Then The user selects the appropriate filter to list the products he has listed..skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:20)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same." time="0.01">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When The user searches and lists the "macbook" he wants to buy in the search box.skipped
+Then The user chooses the products he wants to buy..........................skipped
+And User goes to cart.......................................................skipped
+And The user confirms that the selected products have been added to the cart..skipped
+Then The user confirms that the total price of the selected products is the same as the total price in the basket..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="product" name="US06_TC01 User should be able to choose random products and add to cart. You should see that the total price of the added products and the total in the basket are the same. 2" time="0.01">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 008ef304740a181c81d6df848d21fd3b" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+When The user searches and lists the "gaming mouse" he wants to buy in the search box.skipped
+Then The user chooses the products he wants to buy..........................skipped
+And User goes to cart.......................................................skipped
+And The user confirms that the selected products have been added to the cart..skipped
+Then The user confirms that the total price of the selected products is the same as the total price in the basket..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [008ef304740a181c81d6df848d21fd3b, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50908}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50908/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 008ef304740a181c81d6df848d21fd3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/productSelectAndList.feature:32)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Create And Delete ShopingList" name="US_08 User should be able to create and delete shoppingList." time="107.822">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fd3ee4fdb8d85e1d082242965b81ebf7, findElement {using=xpath, value=//a[@id='nav-link-accountList']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fd3ee4fdb8d85e1d082242965b81ebf7" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................passed
+Then The user clicks the Sign-In button.....................................failed
+When User enters valid email................................................skipped
+Then The user clicks the continue button....................................skipped
+When User enters valid password.............................................skipped
+Then The user clicks the Sign-In button.....................................skipped
+And User hover-over Account &Lists..........................................skipped
+When The user clicks on the Create a List link..............................skipped
+Then User clicks Create a List button.......................................skipped
+Then User enters List Name..................................................skipped
+And User clicks end of Create a List button.................................skipped
+Given User verifies that the list is created................................skipped
+Then User goes to Manage list...............................................skipped
+And User clicks on Delete list button.......................................skipped
+And The user confirms that the list has been deleted........................skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd3ee4fdb8d85e1d082242965b81ebf7, findElement {using=xpath, value=//a[@id='nav-link-accountList']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd3ee4fdb8d85e1d082242965b81ebf7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton(amazonStepDefinitions.java:114)
+	at ✽.The user clicks the Sign-In button..(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Create And Delete ShopingList" name="US_09 User should be able to create and delete shoppingList." time="0.014">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.0.0', revision: '3a21814679'&#10;System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [fd3ee4fdb8d85e1d082242965b81ebf7, get {url=https://www.amazon.com/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fd3ee4fdb8d85e1d082242965b81ebf7" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given User goes to url......................................................failed
+Then The user clicks the Sign-In button.....................................skipped
+When User enters valid email................................................skipped
+Then The user clicks the continue button....................................skipped
+When User enters valid password.............................................skipped
+Then The user clicks the Sign-In button.....................................skipped
+And User hover-over Account &Lists..........................................skipped
+When The user clicks on the Create a List link..............................skipped
+Then User clicks Create a List button.......................................skipped
+Then User enters List Name..................................................skipped
+And User clicks end of Create a List button.................................skipped
+When User types the "iphone 13 512" in the search box.......................skipped
+Then The user goes to the product page......................................skipped
+And User clicks Add to List button..........................................skipped
+And The user clicks the View Your List button and sees the List.............skipped
+Then The user clicks the Delete button and sees the Deleted alert...........skipped
+And The user closes the page................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'PC', ip: '192.168.1.38', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd3ee4fdb8d85e1d082242965b81ebf7, get {url=https://www.amazon.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\pc1\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:50906}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50906/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd3ee4fdb8d85e1d082242965b81ebf7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
+	at ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)
+	at ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/shopingList.feature:6)
 ]]>
         </failure>
     </testcase>

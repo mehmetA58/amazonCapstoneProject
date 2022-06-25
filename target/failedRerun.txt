@@ -1,0 +1,6 @@
+file:src/test/resources/features/ui_features/amazonAllMenu.feature:4
+file:src/test/resources/features/ui_features/footer.feature:5
+file:src/test/resources/features/ui_features/e2e.feature:17
+file:src/test/resources/features/ui_features/login.feature:12:23:33
+file:src/test/resources/features/ui_features/shopingList.feature:19:39
+file:src/test/resources/features/ui_features/productSelectAndList.feature:13:14:15:27:28:41:42

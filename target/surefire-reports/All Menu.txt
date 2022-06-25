@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: All Menu
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 120.073 s <<< FAILURE! - in All Menu
+US03_TC01 The user should be able to select any category from the ALL menu and see the subcategories listed.(All Menu)  Time elapsed: 120.073 s  <<< ERROR!
+java.lang.NullPointerException
+

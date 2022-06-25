@@ -1,4 +1,5 @@
 @Regression
+  @smoke
   @product
 Feature: product
   @us04
