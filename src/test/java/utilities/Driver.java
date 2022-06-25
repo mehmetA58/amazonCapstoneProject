@@ -23,6 +23,8 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
+import static utilities.ConfigReader.*;
+
 public class Driver {
 
     private static final ThreadLocal<WebDriver> driverPool = new ThreadLocal<>();
@@ -40,7 +42,7 @@ public class Driver {
 
             // this line will tell which browser should open based on the value from properties file
             String browserParamFromEnv = System.getProperty("browser");
-            String browser = browserParamFromEnv == null ? ConfigReader.getProperty("browser") : browserParamFromEnv;
+            String browser = browserParamFromEnv == null ? getProperty("browser") : browserParamFromEnv;
 
             switch (browser) {
                 case "chrome":

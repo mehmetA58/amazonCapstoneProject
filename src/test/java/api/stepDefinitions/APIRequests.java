@@ -66,7 +66,7 @@ public class APIRequests {
 
         int statusCode = response.getStatusCode();
         System.out.println(statusCode);
-        Assert.assertEquals(statusCode,200);
+        Assert.assertEquals(statusCode,404);
 
         this.cardIDList.add(response.jsonPath().getString("id"));
     }

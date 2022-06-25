@@ -1,437 +1,109 @@
 [
   {
-    "line": 5,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-04-23T15:15:18.624Z",
-        "line": 6,
-        "name": "US01_TC01 User must be able to login to the Site with a valid URL",
+        "start_timestamp": "2022-06-25T17:55:22.030Z",
+        "line": 4,
+        "name": "Create New Board POST",
         "description": "",
-        "id": "login;us01-tc01-user-must-be-able-to-login-to-the-site-with-a-valid-url",
+        "id": "trello-e2e-test;create-new-board-post",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "error_message": "io.cucumber.core.exception.CucumberException: Failed to instantiate class ui.stepDefinitions.amazonStepDefinitions\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:149)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:133)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:141)\r\n\t... 39 more\r\nCaused by: org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.33\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cfe02041bffe35ae1a819e153d397fba, maximizeCurrentWindow {}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cfe02041bffe35ae1a819e153d397fba\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:928)\r\n\tat utilities.Driver.getDriver(Driver.java:113)\r\n\tat ui.pages.AmazonPage.\u003cinit\u003e(AmazonPage.java:12)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.\u003cinit\u003e(amazonStepDefinitions.java:33)\r\n\t... 44 more\r\n",
-              "duration": 31959216500,
-              "status": "failed"
+              "duration": 4203343900,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "User goes to url.",
+            "line": 5,
+            "name": "Send request for create \"amazonCapStoneTrelloProje\" board",
             "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
+              "arguments": [
+                {
+                  "val": "\"amazonCapStoneTrelloProje\"",
+                  "offset": 24
+                }
+              ],
+              "location": "api.stepDefinitions.TestTrello.sendRequestForCreateBoard(java.lang.String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c404\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat org.junit.Assert.assertEquals(Assert.java:633)\r\n\tat api.stepDefinitions.APIRequests.createNewCard(APIRequests.java:69)\r\n\tat api.stepDefinitions.TestTrello.sendRequestForCreateCardAnd(TestTrello.java:26)\r\n\tat ✽.Send request for create \"Mehmet\u0027sCard\" card and \"AhmetCard\u0027s\"(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/api_features/Trello_e2e.feature:6)\r\n",
+              "duration": 359393200,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "Send request for create \"Mehmet\u0027sCard\" card and \"AhmetCard\u0027s\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mehmet\u0027sCard\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"AhmetCard\u0027s\"",
+                  "offset": 48
+                }
+              ],
+              "location": "api.stepDefinitions.TestTrello.sendRequestForCreateCardAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Send request for update \"Mehmet\u0027sCard update edildi\" board",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mehmet\u0027sCard update edildi\"",
+                  "offset": 24
+                }
+              ],
+              "location": "api.stepDefinitions.TestTrello.sendRequestForUpdateBoard(java.lang.String)"
+            },
+            "keyword": "When "
           },
           {
             "result": {
               "status": "skipped"
             },
             "line": 8,
-            "name": "The user verifies that at \"https://www.amazon.com/\".",
+            "name": "Send request for delete card",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://www.amazon.com/\"",
-                  "offset": 26
-                }
-              ],
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserVerifiesThatAt(java.lang.String)"
+              "location": "api.stepDefinitions.TestTrello.sendRequestForDeleteCard()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
               "status": "skipped"
             },
             "line": 9,
-            "name": "The user closes the page.",
+            "name": "Send request for delete board",
             "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
+              "location": "api.stepDefinitions.TestTrello.sendRequestForDeleteBoard()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login"
-          },
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@us01"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-04-23T15:15:50.778Z",
-        "line": 12,
-        "name": "US02_TC01 The user should be able to login with valid information. (Positive Login)",
-        "description": "",
-        "id": "login;us02-tc01-the-user-should-be-able-to-login-with-valid-information.-(positive-login)",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.33\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cfe02041bffe35ae1a819e153d397fba, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cfe02041bffe35ae1a819e153d397fba\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:13)\r\n",
-              "duration": 4055040000,
-              "status": "failed"
-            },
-            "line": 13,
-            "name": "User goes to url.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000700,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "The user clicks the Sign-In button..",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "User enters valid email.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "The user clicks the continue button.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1000600,
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "User enters valid password.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidPassword()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "The user clicks the Sign-In button.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "The user sees the text \"Hello,USER\".",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Hello,USER\"",
-                  "offset": 23
-                }
-              ],
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserSeesTheText(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "User logs out of account",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userLogsOutOfAccount()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "The user closes the page.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@us01"
-          },
-          {
-            "name": "@us02"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-04-23T15:15:54.850Z",
-        "line": 23,
-        "name": "US02_TC02 The user should not be able to login with invalid information. (Negative Login)",
-        "description": "",
-        "id": "login;us02-tc02-the-user-should-not-be-able-to-login-with-invalid-information.-(negative-login)",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.33\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cfe02041bffe35ae1a819e153d397fba, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cfe02041bffe35ae1a819e153d397fba\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:24)\r\n",
-              "duration": 4026351200,
-              "status": "failed"
-            },
-            "line": 24,
-            "name": "User goes to url.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "The user clicks the Sign-In button..",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "User enters valid email.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersValidEmail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 996400,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "The user clicks the continue button.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "User enters invalid password.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersInvalidPassword()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 998300,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "The user clicks the Sign-In button.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.UserClicksTheSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "The user closes the page.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@us01"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-04-23T15:15:58.902Z",
-        "line": 33,
-        "name": "US02_TC03 The user should not be able to login with invalid information. (Negative Login)",
-        "description": "",
-        "id": "login;us02-tc03-the-user-should-not-be-able-to-login-with-invalid-information.-(negative-login)",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d100.0.4896.127)\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027PC\u0027, ip: \u0027192.168.1.33\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.3\u0027, java.version: \u002711.0.11\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [cfe02041bffe35ae1a819e153d397fba, get {url\u003dhttps://www.amazon.com/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\pc1\\AppData\\Local\\...}, goog:chromeOptions: {debuggerAddress: localhost:49396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cfe02041bffe35ae1a819e153d397fba\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)\r\n\tat ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl(amazonStepDefinitions.java:97)\r\n\tat ✽.User goes to url.(file:///C:/Users/pc1/eclipse-workspace/AmazonCapStone/src/test/resources/features/ui_features/login.feature:34)\r\n",
-              "duration": 4027818900,
-              "status": "failed"
-            },
-            "line": 34,
-            "name": "User goes to url.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userGoesToUrl()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "The user clicks the Sign-In button..",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheSignInButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "name": "User enters invalid email.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.userEntersInvalidEmail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 37,
-            "name": "The user clicks the continue button.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClicksTheContinueButton()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 39,
-            "name": "The user closes the page.",
-            "match": {
-              "location": "ui.stepDefinitions.amazonStepDefinitions.theUserClosesThePage()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@login"
-          },
-          {
-            "name": "@Regression"
-          },
-          {
-            "name": "@smoke"
-          },
-          {
-            "name": "@us01"
+            "name": "@e2e"
           }
         ]
       }
     ],
-    "name": "login",
+    "name": "Trello E2E Test",
     "description": "",
-    "id": "login",
+    "id": "trello-e2e-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ui_features/login.feature",
-    "tags": [
-      {
-        "name": "@login",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      },
-      {
-        "name": "@Regression",
-        "type": "Tag",
-        "location": {
-          "line": 2,
-          "column": 1
-        }
-      },
-      {
-        "name": "@smoke",
-        "type": "Tag",
-        "location": {
-          "line": 3,
-          "column": 3
-        }
-      },
-      {
-        "name": "@us01",
-        "type": "Tag",
-        "location": {
-          "line": 4,
-          "column": 3
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/api_features/Trello_e2e.feature",
+    "tags": []
   }
 ]
